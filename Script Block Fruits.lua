@@ -2053,17 +2053,7 @@ do -- Example UI
 			loadstring(game:HttpGet('https://raw.githubusercontent.com/VEZ2/NEVAHUB/main/2'))()  
 		end)
 		
-		 Tab:AddButton("MADOX HUB", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/Fiend1sh/FiendMain/main/MadoxHubKey",true))()  
-		end)
-		
-		 Tab:AddButton("ZAQUE HUB", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/Mei2232/ZaqueHub/main/Zaque%20Hub"))()  
-		end)
-		
-		 Tab:AddButton("HOHO HUB", function()
-			loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()  
-		end)
+
 		
 end
 	local Tab = Window:AddTab("SCRIPT 2")
@@ -2080,7 +2070,7 @@ end
 	
 		
 	
-		Tab:AddButton("HACK T", function()
+		Tab:AddButton("HACK TỐC ĐÁNH", function()
 			    loadstring(game:HttpGet("https://raw.githubusercontent.com/trumpxl/superfastattack/main/ghevaysao"))()
 		end)
 	
@@ -2092,44 +2082,53 @@ end
 end
 
 
-	local Tab = Window:AddTab("   MOD 2  ")
+	local Tab = Window:AddTab("SCRIPT 3")
 	do -- Elements
-		Tab:AddLabel("NHO DANG KI KENH CHO ALI BOSS NHE")
-	    Tab:AddLabel("~ DANH SACH MENU SCRIPT ALI BOSS ~")
 	    
 		        Tab:AddButton("AUTO FARM BONTY", function()
 			loadstring(game:HttpGet("https://pastebin.com/raw/UzX8jjEk"))()
 			end)
-				Tab:AddButton("GIAM DO HOA", function()
+				Tab:AddButton("GIẢM ĐỘ HỌA", function()
 			loadstring(game:HttpGet("https://pastebin.com/raw/BdvUGb2q"))()
 		end)
-			Tab:AddButton("TELE FRUITS", function()
+			Tab:AddButton("DI CHUYỂN NHẶT TRÁI", function()
 			        loadstring(game:HttpGet"https://gist.githubusercontent.com/NotHubris/4e6fdc88d84c30afa9b28c590f273bbf/raw")()
 		end)
 			Tab:AddButton("AIM BOT", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/ThunderZ-HUB/HUB/main/Aimbot"))()
 		end)
-			Tab:AddButton("MUA TRAI AC QUY", function()
-			        loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HohoV2/Free/BloxFruitFree.lua"))()
-		end)
 			Tab:AddButton("HACK LEVER", function()
 			         loadstring(game:HttpGet('https://raw.githubusercontent.com/SHAREHACK/allscript/main/level'))()
 		end)
-		Tab:AddButton("XUYEN TUONG", function()
+		Tab:AddButton("XUYÊN TƯỜNG", function()
 			        loadstring(game:HttpGet("https://pastebin.com/raw/pKV2Ys4E"))()
 		end)
 		
 
 end
-	local Tab = Window:AddTab("   MOD 3  ")
+	local Tab = Window:AddTab("SCRIPT 4")
  
 	do -- Elements
-		Tab:AddLabel("ALI BOSS: CHUC BAN 1 NGAY TOT LANH")
-	    Tab:AddLabel("~ DANH SACH MENU SCRIPT ALI BOSS ~")
+		Tab:AddLabel("SCRIPT CẦN NHẬP KEY")
 		
-				Tab:AddButton("MASTERY FARM - KEY: BINH LUAN VIDEO", function()
+				Tab:AddButton("MASTERY FARM", function()
 			               loadstring(game:HttpGet('https://raw.githubusercontent.com/xDestinyx/RipperHub/main/Loader.lua'))()
 		end)
+		
+Tab:AddButton("MADOX HUB", function()
+
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Fiend1sh/FiendMain/main/MadoxHubKey",true))()  	
+			end)
+		
+Tab:AddButton("ZAQUE HUB", function()
+
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Mei2232/ZaqueHub/main/Zaque%20Hub"))()  	
+			end)
+		
+Tab:AddButton("HOHO HUB", function()
+
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()  	
+			end)
 end
 
 	Tab:Show()
