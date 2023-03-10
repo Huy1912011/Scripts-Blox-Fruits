@@ -2037,6 +2037,10 @@ do -- Example UI
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/markxd07/get-chest-bf/main/luxuryhub.lua"))() 
 		end)
 		
+Tab:AddButton("AUTO FARM CHEST 2", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/SHAREHACK/bloxfruit/main/autochest'))()                                      	
+			end)
+		
 		Tab:AddButton("XETER HUB", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/Xeter"))()  
 		end)
