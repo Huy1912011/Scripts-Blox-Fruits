@@ -2031,16 +2031,7 @@ do -- Example UI
 	})
 	local Tab = Window:AddTab("SCRIPT 1")
 
-	do -- Elements
-	
-		Tab:AddButton("AUTO FARM CHEST", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/markxd07/get-chest-bf/main/luxuryhub.lua"))() 
-		end)
-		
-Tab:AddButton("AUTO FARM CHEST 2", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/SHAREHACK/bloxfruit/main/autochest'))()                                      	
-			end)
-		
+	do -- Elements		
 		Tab:AddButton("XETER HUB", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/Xeter"))()  
 		end)
@@ -2075,11 +2066,11 @@ end
 		
 	
 		Tab:AddButton("HACK TỐC ĐÁNH", function()
-			    loadstring(game:HttpGet("https://raw.githubusercontent.com/trumpxl/superfastattack/main/ghevaysao"))()
+loadstring(game:HttpGet("https://pastebin.com/raw/q9hBF4Qp"))()
 		end)
 	
-		Tab:AddButton("CHEST FARM MAX", function()
-			   loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/Chest_onoff"))()
+		Tab:AddButton("AUTO FARM CHEST - NGOÀI SẢNH CHỌN HẢI TẶC HẢI QUÂN", function()
+			   loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/ChestFarm"))()
 		end)
 	
 	
