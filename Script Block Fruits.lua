@@ -2032,6 +2032,11 @@ do -- Example UI
 	local Tab = Window:AddTab("SCRIPT 1")
 
 	do -- Elements		
+		
+Tab:AddButton("RACE V4 - VIP", function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/mo061/MysticHub/main/README.md"))()
+		end)
+		
 		Tab:AddButton("XETER HUB", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/Xeter"))()  
 		end)
