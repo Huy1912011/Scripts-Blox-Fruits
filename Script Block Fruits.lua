@@ -2033,9 +2033,7 @@ do -- Example UI
 
 	do -- Elements		
 		
-Tab:AddButton("RACE V4 - VIP", function()
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/mo061/MysticHub/main/README.md"))()
-		end)
+
 		
 		Tab:AddButton("XETER HUB", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/Xeter"))()  
@@ -2101,6 +2099,16 @@ end
 	do -- Elements
 		Tab:AddLabel("SCRIPT CẦN NHẬP KEY")
 		
+		
+
+	
+Tab:AddButton("RACE V4 - VIP", function()
+
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/mo061/MysticHub/main/README.md"))()
+
+		end)
+	
+
 				Tab:AddButton("MASTERY FARM", function()
 			               loadstring(game:HttpGet('https://raw.githubusercontent.com/xDestinyx/RipperHub/main/Loader.lua'))()
 		end)
