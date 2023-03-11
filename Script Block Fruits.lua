@@ -2076,15 +2076,6 @@ end
 
 	local Tab = Window:AddTab("SCRIPT 3")
 	do -- Elements
-	    
-		        Tab:AddButton("AUTO FARM BOUNTY ALONE", function()
-			loadstring(game:HttpGet("https://pastebin.com/raw/UzX8jjEk"))()
-			end)
-		
-Tab:AddButton("AUTO FARM BOUNTY HOHO", function()
-
-			loadstring(game:HttpGet("https://pastebin.com/raw/hEG1Edtc"))()	
-			end)
 				Tab:AddButton("GIẢM ĐỘ HỌA", function()
 			loadstring(game:HttpGet("https://pastebin.com/raw/BdvUGb2q"))()
 		end)
@@ -2114,7 +2105,7 @@ Tab:AddButton("MADOX HUB", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/Fiend1sh/FiendMain/main/MadoxHubKey",true))()  	
 			end)
 		
-Tab:AddButton("AIM BOT", function()
+Tab:AddButton("THUNDERZ HUB", function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/ThunderZ-HUB/HUB/main/Aimbot"))()
 		end)
 		
