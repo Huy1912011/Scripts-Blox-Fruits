@@ -2077,17 +2077,19 @@ end
 	local Tab = Window:AddTab("SCRIPT 3")
 	do -- Elements
 	    
-		        Tab:AddButton("AUTO FARM BONTY", function()
+		        Tab:AddButton("AUTO FARM BOUNTY ALONE", function()
 			loadstring(game:HttpGet("https://pastebin.com/raw/UzX8jjEk"))()
+			end)
+		
+Tab:AddButton("AUTO FARM BOUNTY HOHO", function()
+
+			loadstring(game:HttpGet("https://pastebin.com/raw/hEG1Edtc"))()	
 			end)
 				Tab:AddButton("GIẢM ĐỘ HỌA", function()
 			loadstring(game:HttpGet("https://pastebin.com/raw/BdvUGb2q"))()
 		end)
 			Tab:AddButton("DI CHUYỂN NHẶT TRÁI", function()
 			        loadstring(game:HttpGet"https://gist.githubusercontent.com/NotHubris/4e6fdc88d84c30afa9b28c590f273bbf/raw")()
-		end)
-			Tab:AddButton("AIM BOT", function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/ThunderZ-HUB/HUB/main/Aimbot"))()
 		end)
 			Tab:AddButton("HACK LEVER", function()
 			         loadstring(game:HttpGet('https://raw.githubusercontent.com/SHAREHACK/allscript/main/level'))()
@@ -2111,6 +2113,10 @@ Tab:AddButton("MADOX HUB", function()
 
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/Fiend1sh/FiendMain/main/MadoxHubKey",true))()  	
 			end)
+		
+Tab:AddButton("AIM BOT", function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/ThunderZ-HUB/HUB/main/Aimbot"))()
+		end)
 		
 Tab:AddButton("ZAQUE HUB", function()
 
