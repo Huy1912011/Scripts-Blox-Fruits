@@ -2059,8 +2059,6 @@ end
 				Tab:AddButton("NHẢY CAO", function()
 			                loadstring(game:HttpGet("https://pastebin.com/raw/ZTRKSzaP"))()
 		end)
-			Tab:AddButton("CHẠY NHANH", function()
-			        loadstring(game:HttpGet("https://pastebin.com/raw/5pngPZjp"))()
 		end)
 	
 		
@@ -2069,7 +2067,7 @@ end
 loadstring(game:HttpGet("https://pastebin.com/raw/q9hBF4Qp"))()
 		end)
 	
-		Tab:AddButton("AUTO FARM CHEST - NGOÀI SẢNH CHỌN HẢI TẶC HẢI QUÂN", function()
+		Tab:AddButton("AUTO FARM CHEST - NGOÀI SẢNH", function()
 			   loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/ChestFarm"))()
 		end)
 	
