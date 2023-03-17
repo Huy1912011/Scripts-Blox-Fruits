@@ -2059,7 +2059,7 @@ end
 	do -- Elements
 
 		
-				Tab:AddButton("NHẢY CAO", function()
+				Tab:AddButton("NHẢY TRÊN KHÔNG VÔ TẬN", function()
 			                loadstring(game:HttpGet("https://pastebin.com/raw/ZTRKSzaP"))()
 		end)
 	
@@ -2072,6 +2072,10 @@ loadstring(game:HttpGet("https://pastebin.com/raw/q9hBF4Qp"))()
 		Tab:AddButton("AUTO FARM CHEST - NGOÀI SẢNH", function()
 			   loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/ChestFarm"))()
 		end)
+Tab:AddButton("AUTO FARM RÂU ĐEN, CHÉN THÁNH", function()
+
+			   loadstring(game:HttpGet("https://raw.githubusercontent.com/markxd07/get-chest-bf/main/luxuryhub.lua"))()	
+			end)
 	
 	
 end
