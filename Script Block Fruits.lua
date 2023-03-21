@@ -2047,9 +2047,10 @@ do -- Example UI
 			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ahmadsgamer2/Script--Game/main/Script%20Game"))()  
 		end)
 		
-		 Tab:AddButton("NEVA HUB", function()
-			loadstring(game:HttpGet('https://raw.githubusercontent.com/VEZ2/NEVAHUB/main/2'))()  
-		end)
+Tab:AddButton("ZEE HUB", function()
+
+loadstring(game:HttpGet("https://zKuzy.link/ZeeHub.lua"))()  	
+			end)
 		
 
 		
@@ -2134,6 +2135,10 @@ Tab:AddButton("ZAQUE HUB", function()
 Tab:AddButton("HOHO HUB", function()
 
 			loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()  	
+			end)
+Tab:AddButton("NEVA HUB", function()
+
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/VEZ2/NEVAHUB/main/2'))()  	
 			end)
 end
 
