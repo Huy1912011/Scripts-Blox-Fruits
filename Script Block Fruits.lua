@@ -2042,16 +2042,7 @@ do -- Example UI
 		 Tab:AddButton("2X HUB", function()
 			loadstring(game:HttpGet('https://raw.githubusercontent.com/armch063/2xHub-/main/README.md', true))()  
 		end)
-		
-		 Tab:AddButton("SPEED HUB", function()
-			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ahmadsgamer2/Script--Game/main/Script%20Game"))()  
-		end)
-		
-Tab:AddButton("ZEE HUB", function()
-
-loadstring(game:HttpGet("https://zKuzy.link/ZeeHub.lua"))()  	
-			end)
-		
+				
 
 		
 end
@@ -2139,6 +2130,10 @@ Tab:AddButton("HOHO HUB", function()
 Tab:AddButton("NEVA HUB", function()
 
 			loadstring(game:HttpGet('https://raw.githubusercontent.com/VEZ2/NEVAHUB/main/2'))()  	
+			end)
+Tab:AddButton("SPEED HUB", function()
+
+			loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ahmadsgamer2/Script--Game/main/Script%20Game"))()  	
 			end)
 end
 
