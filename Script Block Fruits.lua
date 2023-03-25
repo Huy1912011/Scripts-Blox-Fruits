@@ -2042,6 +2042,18 @@ do -- Example UI
 		 Tab:AddButton("2X HUB", function()
 			loadstring(game:HttpGet('https://raw.githubusercontent.com/armch063/2xHub-/main/README.md', true))()  
 		end)
+Tab:AddButton("COCA HUB", function()
+
+loadstring(game:HttpGet("https://codeberg.org/CokkaHub/Loadstring/raw/branch/main/CokkaHub.lua"))()  	
+			end)
+Tab:AddButton("BMT HUB", function()
+
+loadstring(game:HttpGetAsync("https://gitlab.com/Sky2836/test/-/raw/main/Auth"))()  	
+			end)
+Tab:AddButton("TURBO HUB", function()
+
+loadstring(Game:HttpGet"https://gitlab.com/turbohubz/loader.xyz/loader/-/raw/main/TurboHub-Loader")()  	
+			end)
 				
 
 		
@@ -2078,7 +2090,7 @@ end
 				Tab:AddButton("GIẢM ĐỘ HỌA", function()
 			loadstring(game:HttpGet("https://pastebin.com/raw/BdvUGb2q"))()
 		end)
-			Tab:AddButton("FARM FRUITS + AUTO STORE", function()
+			Tab:AddButton("FARM FRUITS", function()
 Fruits = {
 
 "Bird: Falcon Fruit",
@@ -2165,94 +2177,6 @@ Repeat = true --------------------------------- Repeat continues hopping
 
 loadstring(game:HttpGet"https://gist.githubusercontent.com/NotHubris/4e6fdc88d84c30afa9b28c590f273bbf/raw")()
 		end)
-Tab:AddButton("FARM FRUITS", function()
-
-Fruits = {
-
-"Bird: Falcon Fruit",
-
-"Diamond Fruit",
-
-"Light Fruit",
-
-"Rubber Fruit",
-
-"Barrier Fruit",
-
-"Magma Fruit",
-
-"Quake Fruit",
-
-"Blizzard Fruit",
-
-"Portal Fruit",
-
-"String Fruit",
-
-"Dark Fruit",
-
-"Sand Fruit",
-
-"Ice Fruit",
-
-"Spin Fruit",
-
-"Flame Fruit",
-
-"Bomb Fruit",
-
-"Smoke Fruit",
-
-"Spin Fruit",
-
-"Spring Fruit",
-
-"Kilo Fruit",
-
-"Revive Fruit",
-
-"Chop Fruit",
-
-"Human: Buddha Fruit",
-
-"Bird: Phoenix Fruit",
-
-"Rumble Fruit",
-
-"Paw Fruit",
-
-"Gravity Fruit",
-
-"Dough Fruit",
-
-"Control Fruit",
-
-"Venom Fruit",
-
-"Shadow Fruit",
-
-"Dragon Fruit" ,
-
-"Soul Fruit",
-
-"Leopard Fruit"
-
-}
-
-Valuable = {"Kilo Fruit","Spin Fruit","Spring Fruit","Bomb Fruit","Smoke Fruit","Spike Fruit","Flame Fruit","Bird: Falcon Fruit","Ice Fruit","Sand Fruit","Dark Fruit","Diamond Fruit","Light Fruit","Rubber Fruit","Barrier Fruit","Magna Fruit","Quake Fruit","String Fruit","Portal Fruit","Blizzard Fruit","Revive Fruit","Chop Fruit, Dough Fruit","Shadow Fruit","Venom Fruit","Control Fruit","Dragon Fruit","Soul Fruit","Leopard Fruit"} ------ it will stop the script if you got this fruit
-
-Webhook = "" --------------------------------Optional
-
-Store = false  --------------------------------Auto Store after it got the fruit
-
-Safeplace = true ----------------------------- Safeplace 
-
-Repeat = true --------------------------------- Repeat continues hopping
-
------------------------------------------------------------------------
-
-loadstring(game:HttpGet"https://gist.githubusercontent.com/NotHubris/4e6fdc88d84c30afa9b28c590f273bbf/raw")()
-				end)
 			Tab:AddButton("HACK LEVER", function()
 			         loadstring(game:HttpGet('https://raw.githubusercontent.com/SHAREHACK/allscript/main/level'))()
 		end)
