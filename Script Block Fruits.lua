@@ -2046,16 +2046,13 @@ Tab:AddButton("COCA HUB", function()
 
 loadstring(game:HttpGet("https://codeberg.org/CokkaHub/Loadstring/raw/branch/main/CokkaHub.lua"))()  	
 			end)
-Tab:AddButton("BMT HUB", function()
+Tab:AddButton("BLACKTRAP HUB", function()
 
 loadstring(game:HttpGetAsync("https://gitlab.com/Sky2836/test/-/raw/main/Auth"))()  	
 			end)
-Tab:AddButton("TURBO HUB", function()
-
-loadstring(game:HttpGet"https://gitlab.com/turbohubz/loader.xyz/loader/-/raw/main/TurboHub-Loader"))()  	
-			end)
 Tab:AddButton("SONIC HUB", function()
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/NickelHUBB/SonicTuru/main/Protected-25.lua"))() 
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NickelHUBB/SonicTuru/main/Protected-25.lua"))()
 			end)
 				
 
