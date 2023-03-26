@@ -2054,6 +2054,10 @@ Tab:AddButton("TURBO HUB", function()
 
 loadstring(Game:HttpGet"https://gitlab.com/turbohubz/loader.xyz/loader/-/raw/main/TurboHub-Loader")()  	
 			end)
+Tab:AddButton("SONIC HUB", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NickelHUBB/SonicTuru/main/Protected-25.lua"))() 
+			end)
 				
 
 		
