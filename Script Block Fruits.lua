@@ -2052,7 +2052,17 @@ loadstring(game:HttpGetAsync("https://gitlab.com/Sky2836/test/-/raw/main/Auth"))
 			end)
 Tab:AddButton("SONIC HUB", function()
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NickelHUBB/SonicTuru/main/Protected-25.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NickelHUBB/SonicTuru/main/SonicHub.lua"))()
+			end)
+Tab:AddButton("LOLI HUB", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/neon"))()
+
+			end)
+Tab:AddButton("URANIUM HUB", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Augustzyzx/UraniumMobile/main/UraniumKak.lua"))()
+
 			end)
 				
 
