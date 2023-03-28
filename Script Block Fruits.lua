@@ -2064,6 +2064,11 @@ Tab:AddButton("URANIUM HUB", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Augustzyzx/UraniumMobile/main/UraniumKak.lua"))()
 
 			end)
+Tab:AddButton("BEO HUB", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Bestxemchua/agagagaq/main/BeoHUB/BeoHUB.lua"))()
+
+			end)
 				
 
 		
