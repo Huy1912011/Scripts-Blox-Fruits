@@ -2052,7 +2052,7 @@ loadstring(game:HttpGetAsync("https://gitlab.com/Sky2836/test/-/raw/main/Auth"))
 			end)
 Tab:AddButton("SONIC HUB", function()
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NickelHUBB/SonicTuru/main/SonicHub.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NickelHUBB/SonicTuru/main/Protected-25.lua"))()
 			end)
 Tab:AddButton("LOLI HUB", function()
 
@@ -2094,6 +2094,11 @@ loadstring(game:HttpGet("https://pastebin.com/raw/q9hBF4Qp"))()
 Tab:AddButton("AUTO FARM RÂU ĐEN, CHÉN THÁNH", function()
 
 			   loadstring(game:HttpGet("https://raw.githubusercontent.com/markxd07/get-chest-bf/main/luxuryhub.lua"))()	
+			end)
+Tab:AddButton("LE VAN NHAT XP - TIẾNG VIỆT", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/levanhatdev/LeVanNhatHub/main/loadingUi"))()
+
 			end)
 	
 	
