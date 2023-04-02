@@ -2077,15 +2077,8 @@ end
  
 	do -- Elements
 
-		
-				Tab:AddButton("NHẢY TRÊN KHÔNG VÔ TẬN", function()
-			                loadstring(game:HttpGet("https://pastebin.com/raw/ZTRKSzaP"))()
-		end)
-	
-		
-	
 		Tab:AddButton("HACK TỐC ĐÁNH", function()
-loadstring(game:HttpGet("https://pastebin.com/raw/q9hBF4Qp"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/trumpxl/name/main/hackcailon"))()
 		end)
 	
 		Tab:AddButton("AUTO FARM CHEST - NGOÀI SẢNH", function()
@@ -2100,6 +2093,11 @@ Tab:AddButton("LE VAN NHAT XP - TIẾNG VIỆT", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/levanhatdev/LeVanNhatHub/main/loadingUi"))()
 
 			end)
+Tab:AddButton("MARU HUB", function()
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/joi-droid/MaruHubBF/main/GOHANSSJ3'))()
+
+			end)
 	
 	
 end
@@ -2107,9 +2105,6 @@ end
 
 	local Tab = Window:AddTab("SCRIPT 3")
 	do -- Elements
-				Tab:AddButton("GIẢM ĐỘ HỌA", function()
-			loadstring(game:HttpGet("https://pastebin.com/raw/BdvUGb2q"))()
-		end)
 			Tab:AddButton("FARM FRUITS", function()
 Fruits = {
 
@@ -2199,9 +2194,6 @@ loadstring(game:HttpGet"https://gist.githubusercontent.com/NotHubris/4e6fdc88d84
 		end)
 			Tab:AddButton("HACK LEVER", function()
 			         loadstring(game:HttpGet('https://raw.githubusercontent.com/SHAREHACK/allscript/main/level'))()
-		end)
-		Tab:AddButton("XUYÊN TƯỜNG", function()
-			        loadstring(game:HttpGet("https://pastebin.com/raw/pKV2Ys4E"))()
 		end)
 		
 
