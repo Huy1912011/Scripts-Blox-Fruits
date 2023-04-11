@@ -2589,6 +2589,116 @@ end
 if World3 then
 Race:Seperator("Race V4")
     
+    Race:Button("Teleport To Timple Of Time",function()
+  Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(28286.35546875, 14895.3017578125, 102.62469482421875)
+    end)
+    
+Race:Button("Teleport To Lever Pull",function()
+  topos(CFrame.new(28575.181640625, 14936.6279296875, 72.31636810302734))
+end)
+
+Race:Button("Teleport To Acient One (Must Be in Temple Of Time!)",function()
+  topos(CFrame.new(28981.552734375, 14888.4267578125, -120.245849609375))
+end)
+   
+   Race:Button("Unlock Lever.", function()
+venyx:Notify("Unlocked")
+if game:GetService("Workspace").Map["Temple of Time"].Lever.Prompt:FindFirstChild("ProximityPrompt") then
+    game:GetService("Workspace").Map["Temple of Time"].Lever.Prompt:FindFirstChild("ProximityPrompt"):Remove()
+else
+--[[]]
+end
+wait(0.1)
+local ProximityPrompt = Instance.new("ProximityPrompt")
+ProximityPrompt.Parent = game:GetService("Workspace").Map["Temple of Time"].Lever.Prompt
+ProximityPrompt.MaxActivationDistance = 10
+ProximityPrompt.ActionText = "Secrets Beholds Inside"
+ProximityPrompt.ObjectText = "An unknown lever of time"
+
+function onProximity()
+local part = game:GetService("Workspace").Map["Temple of Time"].MainDoor1
+local TweenService = game:GetService("TweenService")
+
+local startPosition = part.Position
+local endPosition = startPosition + Vector3.new(0, -50, 0)
+
+local tweenInfo = TweenInfo.new(10, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
+local tween = TweenService:Create(part, tweenInfo, {Position = endPosition})
+
+tween:Play()
+
+local partnew = game:GetService("Workspace").Map["Temple of Time"].MainDoor2
+local TweenService = game:GetService("TweenService")
+
+local startPosition = partnew.Position
+local endPosition = startPosition + Vector3.new(0, -50, 0)
+
+local tweenInfo = TweenInfo.new(10, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
+local tween = TweenService:Create(partnew, tweenInfo, {Position = endPosition})
+
+tween:Play()
+
+local SoundSFX = Instance.new("Sound")
+SoundSFX.Parent = workspace
+SoundSFX.SoundId = "rbxassetid://1904813041"
+SoundSFX:Play()
+SoundSFX.Name = "POwfpxzxzfFfFF"
+game:GetService("Workspace").Map["Temple of Time"].Lever.Prompt:FindFirstChild("ProximityPrompt"):Remove()
+wait(5)
+workspace:FindFirstChild("POwfpxzxzfFfFF"):Remove()
+game:GetService("Workspace").Map["Temple of Time"].NoGlitching:Remove()
+game:GetService("Workspace").Map["Temple of Time"].NoGlitching:Remove()
+game:GetService("Workspace").Map["Temple of Time"].NoGlitching:Remove()
+end
+
+ProximityPrompt.Triggered:Connect(onProximity)
+end)
+
+Race:Button("Clock Acces.", function()
+    game:GetService("Workspace").Map["Temple of Time"].DoNotEnter:Remove()
+    game:GetService("Workspace").Map["Temple of Time"].ClockRoomExit:Remove()
+end)
+
+Race:Toggle("Disabled Inf Stairs", nil, function(value)
+	game.Players.LocalPlayer.Character.InfiniteStairs.Disabled = value
+end)
+   Race:Line()
+ 
+  Race:Button("Teleport Cyborg Door (Must Be in Temple Of Time!)",function()
+  topos(CFrame.new(28492.4140625, 14894.4267578125, -422.1100158691406))
+  end)
+  
+  Race:Button("Teleport Fish Door (Must Be in Temple Of Time!)",function()
+  topos(CFrame.new(28224.056640625, 14889.4267578125, -210.5872039794922))
+  end)
+  
+  Race:Button("Teleport Ghoul Door (Must Be in Temple Of Time!)",function()
+  topos(CFrame.new(28672.720703125, 14889.1279296875, 454.5961608886719))
+  end)
+  
+  Race:Button("Teleport Human Door (Must Be in Temple Of Time!)",function()
+  topos(CFrame.new(29237.294921875, 14889.4267578125, -206.94955444335938))
+  end)
+  
+  Race:Button("Teleport Mink Door (Must Be in Temple Of Time!)",function()
+  topos(CFrame.new(29020.66015625, 14889.4267578125, -379.2682800292969))
+  end)
+  
+  Race:Button("Teleport Sky Door (Must Be in Temple Of Time!)",function()
+  topos(CFrame.new(28967.408203125, 14918.0751953125, 234.31198120117188))
+  end)
+  
+  Race:Line()
+  
+  Race:Button("Teleport To Safe Zone When Pvp (Must Be in Temple Of Time!)",function()
+  topos(CFrame.new(28273.0859375, 14896.5078125, 157.42063903808594))
+  end)
+  
+  Race:Button("Teleport Pvp Zone (Must Be in Temple Of Time!)",function()
+  topos(CFrame.new(28766.681640625, 14967.1455078125, -164.13290405273438))
+  end)
+  end
+
 Stats:Seperator(" Auto Stats ")
 
 Stats:Toggle("Auto Stats Melee",_G.Auto_Stats_Melee,function(value)
@@ -2694,6 +2804,149 @@ _G.Point = value
 return "Point : " .. tostring(value)
 end)
 
+P:Seperator(" Combats ")
+
+P:Slider("Select Size Fov",1,1000,200,function(value)
+_G.Select_Size_Fov = value
+return "Size Fov : " .. tostring(value)
+end)
+
+P:Toggle("Show Fov",_G.Show_Fov,function(value)
+ _G.Show_Fov = value
+end)
+
+P:Toggle("Aimbot Skill Fov",_G.Aimbot_Skill_Fov,function(value)
+ _G.Aimbot_Skill_Fov = value
+end)
+
+P:Seperator(" Kill Player ")
+
+
+Playerslist = {}
+    
+    for i,v in pairs(game:GetService("Players"):GetChildren()) do
+        table.insert(Playerslist,v.Name)
+    end
+    
+    local SelectedPly = P:Dropdown("Select Players",Playerslist,function(value)
+        _G.Select_Player = value
+    end)
+    
+    P:Button("Refresh Player",function()
+        Playerslist = {}
+        SelectedPly:Clear()
+        for i,v in pairs(game:GetService("Players"):GetChildren()) do  
+            SelectedPly:Add(v.Name)
+        end
+    end)
+
+P:Toggle("Spectate Player",_G.Spectate_Player,function(value)
+ _G.Spectate_Player = value
+end)
+
+
+spawn(function()
+	while wait() do
+		if _G.Spectate_Player then
+			pcall(function()
+				if game.Players:FindFirstChild(_G.Select_Player) then
+					game.Workspace.Camera.CameraSubject = game.Players:FindFirstChild(_G.Select_Player).Character.Humanoid
+				end
+			end)
+		else
+			game.Workspace.Camera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
+		end
+	end
+end)
+
+P:Toggle("Teleport to Player",_G.Teleport_to_Player,function(value)
+ _G.Teleport_to_Player = value
+StopTween(_G.Teleport_to_Player)
+end)
+
+
+spawn(function()
+	while wait() do
+		if _G.Teleport_to_Player then
+			pcall(function()
+				if game.Players:FindFirstChild(_G.Select_Player) then
+					topos(game.Players[_G.Select_Player].Character.HumanoidRootPart.CFrame)
+				end
+			end)
+		end
+	end
+end)
+
+P:Toggle("Auto Kill Player [Melee]",_G.Auto_Kill_Player_Melee,function(value)
+ _G.Auto_Kill_Player_Melee = value
+StopTween(_G.Auto_Kill_Player_Melee)
+end)
+
+
+spawn(function()
+	while wait() do 
+		pcall(function()
+			if _G.Auto_Kill_Player_Melee then
+				if game.Players:FindFirstChild(_G.Select_Player) then
+					for i,v in pairs(game:GetService("Workspace").Characters:GetChildren()) do
+						if v.Name == _G.Select_Player and v.Humanoid.Health > 0 then
+							repeat wait()
+								if (v.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude > 300 then
+									topos(v.HumanoidRootPart.CFrame * CFrame.new(0,5,0))
+								elseif (v.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude <= 300 then
+									AutoHaki()
+									EquipWeapon(_G.Select_Weapon_Kill_Player_Melee)
+									topos(v.HumanoidRootPart.CFrame * CFrame.new(0,5,0))
+									game:GetService'VirtualUser':CaptureController()
+									game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
+								end
+							until game.Players:FindFirstChild(_G.Select_Player).Character.Humanoid.Health <= 0 or not _G.Auto_Kill_Player_Melee or not game.Players:FindFirstChild(_G.Select_Player)
+						end
+					end
+				end
+			end
+		end)
+	end
+end)
+
+P:Toggle("Auto Kill Player [Gun]",_G.Auto_Kill_Player_Gun,function(value)
+ _G.Auto_Kill_Player_Gun = value
+StopTween(_G.Auto_Kill_Player_Gun)
+end)
+
+
+spawn(function()
+	while wait() do 
+		pcall(function()
+			if _G.Auto_Kill_Player_Gun then
+				if game.Players:FindFirstChild(_G.Select_Player) then
+					for i,v in pairs(game:GetService("Workspace").Characters:GetChildren()) do
+						if v.Name == _G.Select_Player and v.Humanoid.Health > 0 then
+							repeat wait()
+								if (v.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude > 300 then
+									topos(v.HumanoidRootPart.CFrame)
+								elseif (v.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude <= 300 then
+									AutoHaki()
+									EquipWeapon(SelectToolWeaponGun)
+									UseGunKillPlayer = true
+									game:GetService("Players").LocalPlayer.Character[SelectToolWeaponGun].Cooldown.Value = 0
+									v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+									v.HumanoidRootPart.Transparency = 0.7
+									topos(v.HumanoidRootPart.CFrame * CFrame.new(0,50,-10))
+									game:GetService'VirtualUser':CaptureController()
+									game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
+								end
+							until game.Players:FindFirstChild(_G.Select_Player).Character.Humanoid.Health <= 0 or not _G.Auto_Kill_Player_Gun or not game.Players:FindFirstChild(_G.Select_Player)
+						end
+					end
+				end
+			else
+				UseGunKillPlayer = false
+			end
+		end)
+	end
+end)
+
 Teleport:Seperator(" WORLD ")
  
  Teleport:Button("Teleport To Old World",function()
@@ -2709,14 +2962,572 @@ Teleport:Seperator(" WORLD ")
   game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelZou")
   end)
  
+ Teleport:Button("Teleport to Seabeast",function()
+  for i,v in pairs(game:GetService("Workspace").SeaBeasts:GetChildren()) do
+  if v:FindFirstChild("HumanoidRootPart") then
+  topos(v.HumanoidRootPart.CFrame*CFrame.new(0,100,0))
+  end
+  end
+ end)
+ 
  Teleport:Seperator(" Island ")
  
+ if World1 then
+ Teleport:Dropdown("Select Island", {
+  "WindMill",
+  "Marine",
+  "Middle Town",
+  "Jungle",
+  "Pirate Village",
+  "Desert",
+  "Snow Island",
+  "MarineFord",
+  "Colosseum",
+  "Sky Island 1",
+  "Sky Island 2",
+  "Sky Island 3",
+  "Prison",
+  "Magma Village",
+  "Under Water Island",
+  "Fountain City",
+  "Shank Room",
+  "Mob Island"
+ },function(value)
+  _G.SelectIsland = value
+  end)
+ end
+ 
+ if World2 then
+ Teleport:Dropdown("Select Island", {
+  "The Cafe",
+  "Frist Spot",
+  "Dark Area",
+  "Flamingo Mansion",
+  "Flamingo Room",
+  "Green Zone",
+  "Factory",
+  "Colossuim",
+  "Zombie Island",
+  "Two Snow Mountain",
+  "Punk Hazard",
+  "Cursed Ship",
+  "Ice Castle",
+  "Forgotten Island",
+  "Ussop Island",
+  "Mini Sky Island"
+ },function(value)
+  _G.SelectIsland = value
+  end)
+ end
+ 
+ if World3 then
+ Teleport:Dropdown("Select Island", {
+  "Mansion",
+  "Port Town",
+  "Great Tree",
+  "Castle On The Sea",
+  "MiniSky",
+  "Hydra Island",
+  "Floating Turtle",
+  "Haunted Castle",
+  "Ice Cream Island",
+  "Peanut Island",
+  "Cake Island",
+  "Noname Island(New)"
+ },function(value)
+  _G.SelectIsland = value
+  end)
+ end
+ 
+ Teleport:Toggle("Teleport",false,function(value)
+  _G.TeleportIsland = value
+  if _G.TeleportIsland == true then
+  repeat wait()
+  if _G.SelectIsland == "WindMill" then
+  topos(CFrame.new(979.79895019531, 16.516613006592, 1429.0466308594))
+  elseif _G.SelectIsland == "Marine" then
+  topos(CFrame.new(-2566.4296875, 6.8556680679321, 2045.2561035156))
+  elseif _G.SelectIsland == "Middle Town" then
+  topos(CFrame.new(-690.33081054688, 15.09425163269, 1582.2380371094))
+  elseif _G.SelectIsland == "Jungle" then
+  topos(CFrame.new(-1612.7957763672, 36.852081298828, 149.12843322754))
+  elseif _G.SelectIsland == "Pirate Village" then
+  topos(CFrame.new(-1181.3093261719, 4.7514905929565, 3803.5456542969))
+  elseif _G.SelectIsland == "Desert" then
+  topos(CFrame.new(944.15789794922, 20.919729232788, 4373.3002929688))
+  elseif _G.SelectIsland == "Snow Island" then
+  topos(CFrame.new(1347.8067626953, 104.66806030273, -1319.7370605469))
+  elseif _G.SelectIsland == "MarineFord" then
+  topos(CFrame.new(-4914.8212890625, 50.963626861572, 4281.0278320313))
+  elseif _G.SelectIsland == "Colosseum" then
+  topos(CFrame.new(-1427.6203613281, 7.2881078720093, -2792.7722167969))
+  elseif _G.SelectIsland == "Sky Island 1" then
+  topos(CFrame.new(-4869.1025390625, 733.46051025391, -2667.0180664063))
+  elseif _G.SelectIsland == "Sky Island 2" then
+  game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(-4607.82275, 872.54248, -1667.55688))
+  elseif _G.SelectIsland == "Sky Island 3" then
+  game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(-7894.6176757813, 5547.1416015625, -380.29119873047))
+  elseif _G.SelectIsland == "Prison" then
+  topos(CFrame.new(4875.330078125, 5.6519818305969, 734.85021972656))
+  elseif _G.SelectIsland == "Magma Village" then
+  topos(CFrame.new(-5247.7163085938, 12.883934020996, 8504.96875))
+  elseif _G.SelectIsland == "Under Water Island" then
+  game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(61163.8515625, 11.6796875, 1819.7841796875))
+  elseif _G.SelectIsland == "Fountain City" then
+  topos(CFrame.new(5127.1284179688, 59.501365661621, 4105.4458007813))
+  elseif _G.SelectIsland == "Shank Room" then
+  topos(CFrame.new(-1442.16553, 29.8788261, -28.3547478))
+  elseif _G.SelectIsland == "Mob Island" then
+  topos(CFrame.new(-2850.20068, 7.39224768, 5354.99268))
+  elseif _G.SelectIsland == "The Cafe" then
+  topos(CFrame.new(-380.47927856445, 77.220390319824, 255.82550048828))
+  elseif _G.SelectIsland == "Frist Spot" then
+  topos(CFrame.new(-11.311455726624, 29.276733398438, 2771.5224609375))
+  elseif _G.SelectIsland == "Dark Area" then
+  topos(CFrame.new(3780.0302734375, 22.652164459229, -3498.5859375))
+  elseif _G.SelectIsland == "Flamingo Mansion" then
+  topos(CFrame.new(-483.73370361328, 332.0383605957, 595.32708740234))
+  elseif _G.SelectIsland == "Flamingo Room" then
+  topos(CFrame.new(2284.4140625, 15.152037620544, 875.72534179688))
+  elseif _G.SelectIsland == "Green Zone" then
+  topos(CFrame.new(-2448.5300292969, 73.016105651855, -3210.6306152344))
+  elseif _G.SelectIsland == "Factory" then
+  topos(CFrame.new(424.12698364258, 211.16171264648, -427.54049682617))
+  elseif _G.SelectIsland == "Colossuim" then
+  topos(CFrame.new(-1503.6224365234, 219.7956237793, 1369.3101806641))
+  elseif _G.SelectIsland == "Zombie Island" then
+  topos(CFrame.new(-5622.033203125, 492.19604492188, -781.78552246094))
+  elseif _G.SelectIsland == "Two Snow Mountain" then
+  topos(CFrame.new(753.14288330078, 408.23559570313, -5274.6147460938))
+  elseif _G.SelectIsland == "Punk Hazard" then
+  topos(CFrame.new(-6127.654296875, 15.951762199402, -5040.2861328125))
+  elseif _G.SelectIsland == "Cursed Ship" then
+  topos(CFrame.new(923.40197753906, 125.05712890625, 32885.875))
+  elseif _G.SelectIsland == "Ice Castle" then
+  topos(CFrame.new(6148.4116210938, 294.38687133789, -6741.1166992188))
+  elseif _G.SelectIsland == "Forgotten Island" then
+  topos(CFrame.new(-3032.7641601563, 317.89672851563, -10075.373046875))
+  elseif _G.SelectIsland == "Ussop Island" then
+  topos(CFrame.new(4816.8618164063, 8.4599885940552, 2863.8195800781))
+  elseif _G.SelectIsland == "Mini Sky Island" then
+  topos(CFrame.new(-288.74060058594, 49326.31640625, -35248.59375))
+  elseif _G.SelectIsland == "Great Tree" then
+  topos(CFrame.new(2681.2736816406, 1682.8092041016, -7190.9853515625))
+  elseif _G.SelectIsland == "Castle On The Sea" then
+  topos(CFrame.new(-5074.45556640625, 314.5155334472656, -2991.054443359375))
+  elseif _G.SelectIsland == "MiniSky" then
+  topos(CFrame.new(-260.65557861328, 49325.8046875, -35253.5703125))
+  elseif _G.SelectIsland == "Port Town" then
+  topos(CFrame.new(-290.7376708984375, 6.729952812194824, 5343.5537109375))
+  elseif _G.SelectIsland == "Hydra Island" then
+  topos(CFrame.new(5228.8842773438, 604.23400878906, 345.0400390625))
+  elseif _G.SelectIsland == "Floating Turtle" then
+  topos(CFrame.new(-13274.528320313, 531.82073974609, -7579.22265625))
+  elseif _G.SelectIsland == "Mansion" then
+  game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(-12471.169921875, 374.94024658203, -7551.677734375))
+  elseif _G.SelectIsland == "Haunted Castle" then
+  topos(CFrame.new(-9515.3720703125, 164.00624084473, 5786.0610351562))
+  elseif _G.SelectIsland == "Ice Cream Island" then
+  topos(CFrame.new(-902.56817626953, 79.93204498291, -10988.84765625))
+  elseif _G.SelectIsland == "Peanut Island" then
+  topos(CFrame.new(-2062.7475585938, 50.473892211914, -10232.568359375))
+  elseif _G.SelectIsland == "Cake Island" then
+  topos(CFrame.new(-1884.7747802734375, 19.327526092529297, -11666.8974609375))
+  elseif _G.SelectIsland == "Noname Island(New)" then
+  topos(CFrame.new(231.742981, 25.3354111, -12199.0537, 0.998278677, -5.16006757e-08, 0.0586484075, 4.79685092e-08, 1, 6.33390442e-08, -0.0586484075, -6.04167383e-08, 0.998278677))
+  end
+  until not _G.TeleportIsland
+  end
+  StopTween(_G.TeleportIsland)
+ end)
+ 
+ Teleport:Button("Instant Teleport",function()
+		 _G.Instant = true
+        if _G.Instant == true then
+	     if _G.SelectIsland == "Port Town" then 
+	     repeat task.wait()
+         game.Players.LocalPlayer.Character.Head:Destroy()
+         wait(0.5)
+         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-290.7376708984375, 6.729952812194824, 5343.5537109375)
+         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
+         until game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT 
+	    elseif _G.SelectIsland == "Great Tree" then
+	    repeat task.wait()
+        game.Players.LocalPlayer.Character.Head:Destroy()
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2681.2736816406, 1682.8092041016, -7190.9853515625)
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
+        until game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT 
+        elseif _G.SelectIsland == "Castle On The Sea" then
+	    repeat task.wait()
+        game.Players.LocalPlayer.Character.Head:Destroy()
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5074.45556640625, 314.5155334472656, -2991.054443359375)
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
+        until game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT 
+        elseif _G.SelectIsland == "MiniSky" then
+	    repeat task.wait()
+        game.Players.LocalPlayer.Character.Head:Destroy()
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-260.65557861328, 49325.8046875, -35253.5703125)
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
+        until game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT 
+        elseif _G.SelectIsland == "Hydra Island" then
+	    repeat task.wait()
+        game.Players.LocalPlayer.Character.Head:Destroy()
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5228.8842773438, 604.23400878906, 345.0400390625)
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
+        until game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT 
+        elseif _G.SelectIsland == "Floating Turtle" then
+	    repeat task.wait()
+        game.Players.LocalPlayer.Character.Head:Destroy()
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-13274.528320313, 531.82073974609, -7579.22265625)
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
+        until game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT 
+        elseif _G.SelectIsland == "Haunted Castle" then
+	    repeat task.wait()
+        game.Players.LocalPlayer.Character.Head:Destroy()
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9515.3720703125, 164.00624084473, 5786.0610351562)
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
+        until game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT 
+        elseif _G.SelectIsland == "Ice Cream Island" then
+	    repeat task.wait()
+        game.Players.LocalPlayer.Character.Head:Destroy()
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-902.56817626953, 79.93204498291, -10988.84765625)
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
+        until game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT 
+        elseif _G.SelectIsland == "Peanut Island" then
+	    repeat task.wait()
+        game.Players.LocalPlayer.Character.Head:Destroy()
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2062.7475585938, 50.473892211914, -10232.568359375)
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
+        until game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT 
+        elseif _G.SelectIsland == "Cake Island" then
+	    repeat task.wait()
+        game.Players.LocalPlayer.Character.Head:Destroy()
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1884.7747802734375, 19.327526092529297, -11666.8974609375)
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
+        until game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT 
+        ----------------------------------------------------------------------------------------------------
+        elseif _G.SelectIsland == "The Cafe" then
+	    repeat task.wait()
+        game.Players.LocalPlayer.Character.Head:Destroy()
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-380.47927856445, 77.220390319824, 255.82550048828)
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
+        until game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT 
+        elseif _G.SelectIsland == "Frist Spot" then
+	    repeat task.wait()
+        game.Players.LocalPlayer.Character.Head:Destroy()
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-11.311455726624, 29.276733398438, 2771.5224609375)
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
+        until game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT 
+        elseif _G.SelectIsland == "Dark Area" then
+	    repeat task.wait()
+        game.Players.LocalPlayer.Character.Head:Destroy()
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3780.0302734375, 22.652164459229, -3498.5859375)
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
+        until game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT 
+        elseif _G.SelectIsland == "Flamingo Mansion" then
+	    repeat task.wait()
+        game.Players.LocalPlayer.Character.Head:Destroy()
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-483.73370361328, 332.0383605957, 595.32708740234)
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
+        until game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT 
+        elseif _G.SelectIsland == "Flamingo Room" then
+	    repeat task.wait()
+        game.Players.LocalPlayer.Character.Head:Destroy()
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2284.4140625, 15.152037620544, 875.72534179688)
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
+        until game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT 
+        elseif _G.SelectIsland == "Green Zone" then
+	    repeat task.wait()
+        game.Players.LocalPlayer.Character.Head:Destroy()
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2448.5300292969, 73.016105651855, -3210.6306152344)
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
+        until game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT 
+        elseif _G.SelectIsland == "Factory" then
+	    repeat task.wait()
+        game.Players.LocalPlayer.Character.Head:Destroy()
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(424.12698364258, 211.16171264648, -427.54049682617)
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
+        until game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT 
+        elseif _G.SelectIsland == "Colossuim" then
+	    repeat task.wait()
+        game.Players.LocalPlayer.Character.Head:Destroy()
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1503.6224365234, 219.7956237793, 1369.3101806641)
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
+        until game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT 
+        elseif _G.SelectIsland == "Zombie Island" then
+	    repeat task.wait()
+        game.Players.LocalPlayer.Character.Head:Destroy()
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5622.033203125, 492.19604492188, -781.78552246094)
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
+        until game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT 
+        elseif _G.SelectIsland == "Two Snow Mountain" then
+	    repeat task.wait()
+        game.Players.LocalPlayer.Character.Head:Destroy()
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(753.14288330078, 408.23559570313, -5274.6147460938)
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
+        until game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT 
+        elseif _G.SelectIsland == "Punk Hazard" then
+	    repeat task.wait()
+        game.Players.LocalPlayer.Character.Head:Destroy()
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-6127.654296875, 15.951762199402, -5040.2861328125)
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
+        until game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT 
+        elseif _G.SelectIsland == "Cursed Ship" then
+	    repeat task.wait()
+        game.Players.LocalPlayer.Character.Head:Destroy()
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(923.40197753906, 125.05712890625, 32885.875)
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
+        until game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT 
+        elseif _G.SelectIsland == "Ice Castle" then
+	    repeat task.wait()
+        game.Players.LocalPlayer.Character.Head:Destroy()
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(6148.4116210938, 294.38687133789, -6741.1166992188)
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
+        until game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT 
+        elseif _G.SelectIsland == "Forgotten Island" then
+	    repeat task.wait()
+        game.Players.LocalPlayer.Character.Head:Destroy()
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3032.7641601563, 317.89672851563, -10075.373046875)
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
+        until game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT 
+        elseif _G.SelectIsland == "Ussop Island" then
+	    repeat task.wait()
+        game.Players.LocalPlayer.Character.Head:Destroy()
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4816.8618164063, 8.4599885940552, 2863.8195800781)
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
+        until game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT 
+        elseif _G.SelectIsland == "Mini Sky Island" then
+	    repeat task.wait()
+        game.Players.LocalPlayer.Character.Head:Destroy()
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-288.74060058594, 49326.31640625, -35248.59375)
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
+        until game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT 
+        elseif _G.SelectIsland == "WindMill" then
+	    repeat task.wait()
+        game.Players.LocalPlayer.Character.Head:Destroy()
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(979.79895019531, 16.516613006592, 1429.0466308594)
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
+        until game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT 
+        elseif _G.SelectIsland == "Marine" then
+	    repeat task.wait()
+        game.Players.LocalPlayer.Character.Head:Destroy()
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2566.4296875, 6.8556680679321, 2045.2561035156)
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
+        until game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT
+        elseif _G.SelectIsland == "Middle Town" then
+	    repeat task.wait()
+        game.Players.LocalPlayer.Character.Head:Destroy()
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-690.33081054688, 15.09425163269, 1582.2380371094)
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
+        until game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT
+        elseif _G.SelectIsland == "Jungle" then
+	    repeat task.wait()
+        game.Players.LocalPlayer.Character.Head:Destroy()
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1612.7957763672, 36.852081298828, 149.12843322754)
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
+        until game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT
+        elseif _G.SelectIsland == "Pirate Village" then
+	    repeat task.wait()
+        game.Players.LocalPlayer.Character.Head:Destroy()
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1181.3093261719, 4.7514905929565, 3803.5456542969)
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
+        until game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT
+        elseif _G.SelectIsland == "Desert" then
+	    repeat task.wait()
+        game.Players.LocalPlayer.Character.Head:Destroy()
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(944.15789794922, 20.919729232788, 4373.3002929688)
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
+        until game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT
+        elseif _G.SelectIsland == "Snow Island" then
+	    repeat task.wait()
+        game.Players.LocalPlayer.Character.Head:Destroy()
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1347.8067626953, 104.66806030273, -1319.7370605469)
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
+        until game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT
+        elseif _G.SelectIsland == "MarineFord" then
+	    repeat task.wait()
+        game.Players.LocalPlayer.Character.Head:Destroy()
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4914.8212890625, 50.963626861572, 4281.0278320313)
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
+        until game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT
+        elseif _G.SelectIsland == "Colosseum" then
+	    repeat task.wait()
+        game.Players.LocalPlayer.Character.Head:Destroy()
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1427.6203613281, 7.2881078720093, -2792.7722167969)
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
+        until game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT
+        elseif _G.SelectIsland == "Sky Island 1" then
+	    repeat task.wait()
+        game.Players.LocalPlayer.Character.Head:Destroy()
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4869.1025390625, 733.46051025391, -2667.0180664063)
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
+        until game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT
+        elseif _G.SelectIsland == "Prison" then
+	    repeat task.wait()
+        game.Players.LocalPlayer.Character.Head:Destroy()
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4875.330078125, 5.6519818305969, 734.85021972656)
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
+        until game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT
+        elseif _G.SelectIsland == "Magma Village" then
+	    repeat task.wait()
+        game.Players.LocalPlayer.Character.Head:Destroy()
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5247.7163085938, 12.883934020996, 8504.96875)
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
+        until game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT
+        elseif _G.SelectIsland == "Fountain City" then
+	    repeat task.wait()
+        game.Players.LocalPlayer.Character.Head:Destroy()
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(127.1284179688, 59.501365661621, 4105.4458007813)
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
+        until game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT
+        elseif _G.SelectIsland == "Shank Room" then
+	    repeat task.wait()
+        game.Players.LocalPlayer.Character.Head:Destroy()
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1442.16553, 29.8788261, -28.3547478)
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
+        until game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT
+        elseif _G.SelectIsland == "Mob Island" then
+	    repeat task.wait()
+        game.Players.LocalPlayer.Character.Head:Destroy()
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2850.20068, 7.39224768, 5354.99268)
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
+        until game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT
+        end
+     end
+end)
+
 if World1 then
     Dungeon:Label("Dungeon Raid Only Available At Sea 2 and 3")
 end
 
 if World2 or World3 then
 Dungeon:Seperator("Use in Dungeon Only!")
+
+chip = {
+	"Flame", 
+	"Ice", 
+	"Quake", 
+	"Light",
+	"Dark",
+	"String",
+	"Rumble",
+	"Magma",
+	"Human: Buddha",
+	"Sand",
+	"Bird: Phoenix"
+}
+
+Dungeon:Dropdown("Select Dungeon",chip,function(value)
+ _G.Select_Dungeon = value
+end)
+
+Dungeon:Toggle("Auto Buy Chip Dungeon",_G.Auto_Buy_Chips_Dungeon,function(value)
+ _G.Auto_Buy_Chips_Dungeon = value
+end)
+
+
+spawn(function()
+    while wait() do
+		if _G.Auto_Buy_Chips_Dungeon then
+			pcall(function()
+				local args = {
+					[1] = "RaidsNpc",
+					[2] = "Select",
+					[3] = _G.Select_Dungeon
+				}
+				
+				game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+			end)
+		end
+    end
+end)
+
+
+Dungeon:Toggle("Auto Start Dungeon",_G.Auto_StartRaid,function(value)
+ _G.Auto_StartRaid = value
+end)
+
+spawn(function()
+    while wait(.1) do
+        pcall(function()
+            if _G.Auto_StartRaid then
+                if game:GetService("Players")["LocalPlayer"].PlayerGui.Main.Timer.Visible == false then
+                    if not game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 1") and game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Special Microchip") or game:GetService("Players").LocalPlayer.Character:FindFirstChild("Special Microchip") then
+                        if World2 then
+                            fireclickdetector(game:GetService("Workspace").Map.CircleIsland.RaidSummon2.Button.Main.ClickDetector)
+                        elseif World3 then
+                            fireclickdetector(game:GetService("Workspace").Map["Boat Castle"].RaidSummon2.Button.Main.ClickDetector)
+                        end
+                    end
+                end
+            end
+        end)
+    end
+    end)
+
+Dungeon:Toggle("Auto Next Island",_G.Auto_Next_Island,function(value)
+ _G.Auto_Next_Island = value
+end)
+
+spawn(function()
+    while wait() do
+        if _G.Auto_Next_Island then
+			if not game.Players.LocalPlayer.PlayerGui.Main.Timer.Visible == false then
+				if game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 5") then
+					topos(game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 5").CFrame * CFrame.new(0,70,100))
+				elseif game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 4") then
+					topos(game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 4").CFrame * CFrame.new(0,70,100))
+				elseif game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 3") then
+					topos(game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 3").CFrame * CFrame.new(0,70,100))
+				elseif game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 2") then
+					topos(game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 2").CFrame * CFrame.new(0,70,100))
+				elseif game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 1") then
+					topos(game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 1").CFrame * CFrame.new(0,70,100))
+				end
+			end
+        end
+    end
+end)
 
 Dungeon:Toggle("Kill Aura",_G.Kill_Aura,function(value)
  _G.Kill_Aura = value  
@@ -2740,6 +3551,159 @@ spawn(function()
     end
 end)
 
+Dungeon:Toggle("Auto Awake",_G.Auto_Awake,function(value)
+ _G.Auto_Awake = value 
+end)
+
+
+spawn(function()
+	while wait(.1) do
+		if _G.Auto_Awake then
+			pcall(function()
+				local args = {
+					[1] = "Awakener",
+					[2] = "Check"
+				}
+				
+				game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+				local args = {
+					[1] = "Awakener",
+					[2] = "Awaken"
+				}
+				game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+			end)
+		end
+	end
+end)
+
+  
+  Dungeon:Button("Next Island",function()
+   pcall(function()
+    if game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 5") then
+    topos(game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 5").CFrame*CFrame.new(0,70,100))
+    elseif game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 4") then
+    topos(game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 4").CFrame*CFrame.new(0,70,100))
+    elseif game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 3") then
+    topos(game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 3").CFrame*CFrame.new(0,70,100))
+    elseif game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 2") then
+    topos(game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 2").CFrame*CFrame.new(0,70,100))
+    elseif game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 1") then
+    topos(game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 1").CFrame*CFrame.new(0,70,100))
+    end
+    end)
+  end)
+  
+local function toTarget(...)
+	local RealtargetPos = {...}
+	local targetPos = RealtargetPos[1]
+	local RealTarget
+	if type(targetPos) == "vector" then
+		RealTarget = CFrame.new(targetPos)
+	elseif type(targetPos) == "userdata" then
+		RealTarget = targetPos
+	elseif type(targetPos) == "number" then
+		RealTarget = CFrame.new(unpack(RealtargetPos))
+	end
+
+	if game.Players.LocalPlayer.Character:WaitForChild("Humanoid").Health == 0 then if tween then tween:Cancel() end repeat wait() until game.Players.LocalPlayer.Character:WaitForChild("Humanoid").Health > 0; wait(0.2) end
+
+	local tweenfunc = {}
+	local Distance = (RealTarget.Position - game:GetService("Players").LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position).Magnitude
+	if Distance < 1000 then
+		Speed = 315
+	elseif Distance >= 1000 then
+		Speed = 300
+	end
+
+function topos(Pos)
+            Distance = (Pos.Position - game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
+            if Distance < 250 then
+                Speed = 600
+            elseif Distance >= 1000 then
+                Speed = 200
+            end
+            game:GetService("TweenService"):Create(
+                game:GetService("Players").LocalPlayer.Character.HumanoidRootPart,
+                TweenInfo.new(Distance/Speed, Enum.EasingStyle.Linear),
+                {CFrame = Pos}
+            ):Play()
+            _G.Clip = true
+            wait(Distance/Speed)
+            _G.Clip = false
+end
+end
+
+Dungeon:Seperator("\\\\\  Law Dungeon  //")
+
+Dungeon:Toggle("Auto Buy Law Chip",_G.Auto_Buy_Law_Chip,function(value)
+ _G.Auto_Buy_Law_Chip = value
+end)
+
+spawn(function()
+	while wait() do
+		if _G.Auto_Buy_Law_Chip then
+			pcall(function()
+				if game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Microchip") or game:GetService("Players").LocalPlayer.Character:FindFirstChild("Microchip") or game:GetService("Workspace").Enemies:FindFirstChild("Order [Lv. 1250] [Raid Boss]") or game:GetService("ReplicatedStorage"):FindFirstChild("Order [Lv. 1250] [Raid Boss]") then
+				
+				else
+					local args = {
+						[1] = "BlackbeardReward",
+						[2] = "Microchip",
+						[3] = "2"
+					}
+					game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+				end
+			end)
+		end
+	end
+end)
+
+Dungeon:Toggle("Auto Start Law Dungeon",_G.Auto_Start_Law_Dungeon,function(value)
+ _G.Auto_Start_Law_Dungeon = value
+end)
+
+
+spawn(function()
+	while wait() do
+		if _G.Auto_Start_Law_Dungeon then
+			pcall(function()
+				if game:GetService("Players").LocalPlayer.Character:FindFirstChild("Microchip") or game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Microchip") then
+					fireclickdetector(game:GetService("Workspace").Map.CircleIsland.RaidSummon.Button.Main.ClickDetector)
+				end
+			end)
+		end
+	end
+end)
+
+Dungeon:Toggle("Auto Kill Law",_G.Auto_Kill_Law,function(value)
+_G.Auto_Kill_Law = value
+end)
+
+spawn(function()
+	while wait() do
+		if _G.Auto_Kill_Law then
+			pcall(function()
+				if game:GetService("ReplicatedStorage"):FindFirstChild("Order [Lv. 1250] [Raid Boss]") or game:GetService("Workspace").Enemies:FindFirstChild("Order [Lv. 1250] [Raid Boss]") then
+					for i,v in pairs(game.Workspace.Enemies:GetChildren()) do
+						if _G.Auto_Kill_Law and v.Name == "Order [Lv. 1250] [Raid Boss]" and v:FindFirstChild("HumanoidRootPart") and v:FindFirstChild("Humanoid") and v.Humanoid.Health > 0 then
+							repeat task.wait()
+								AutoHaki()
+								EquipWeapon(_G.Select_Weapon)
+								v.HumanoidRootPart.CanCollide = false
+								v.HumanoidRootPart.Size = Vector3.new(50,50,50)
+								topos(v.HumanoidRootPart.CFrame * CFrame.new(0,30,0))
+								game:GetService'VirtualUser':CaptureController()
+								game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
+							until not _G.Auto_Kill_Law or v.Humanoid.Health <= 0 or not v.Parent
+						end
+					end
+				end 
+			end)
+		end
+	end
+end)
+end
+ 
  DevilFruit:Seperator(" Sniper ")
  
  FruitList = {
@@ -2894,7 +3858,24 @@ end)
 		end)
  
  
- DevilFruit:Toggle("Dịch chuyển nhặt trái(Không nên dùng)",false,function(value)
+ DevilFruit:Toggle("Grab Fruit",_G.BringFruit,function(value)
+  _G.BringFruit = value
+  pcall(function()
+   while _G.BringFruit do wait(.1)
+   for i,v in pairs(game:GetService("Workspace"):GetChildren()) do
+   if v:IsA("Tool") then
+   local OldCFrame = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame
+   game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = v.Handle.CFrame * CFrame.new(0,0,8)
+   v.Handle.CFrame = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame
+   wait(.1)
+   game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = OldCFrame
+   end
+   end
+   end
+   end)
+ end)
+ 
+ DevilFruit:Toggle("Teleport To Spawn Fruit",false,function(value)
  _G.Grabfruit = value
 end)
 
@@ -2909,6 +3890,24 @@ spawn(function()
 				end
 end
 end)
+ DevilFruit:Toggle("Bring All Fruit 75% Kick System",_G.BringFruitBF,function(value)
+  _G.BringFruitBF = value
+  end)
+ 
+ spawn(function()
+  while wait() do
+  if _G.BringFruitBF then
+  pcall(function()
+   for i,v in pairs(game.Workspace:GetChildren()) do
+   if v:IsA("Tool") then
+   v.Handle.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+   end
+   end
+   end)
+  end
+  end
+ end)
+ 
  function isnil(thing)
  return (thing == nil)
  end
@@ -3114,6 +4113,22 @@ function UpdateIslandESP()
  DevilFruit:Seperator(" ESP ")
   
 if World2 then
+		DevilFruit:Button("TP Flower Red",function()
+			for i,v in pairs(game.Workspace:GetDescendants()) do
+				if v.Name == "Flower2" then
+				    topos(v.CFrame)
+				end
+			end
+		end)
+
+		DevilFruit:Button("TP Flower Blue",function()
+			for i,v in pairs(game.Workspace:GetDescendants()) do
+				if v.Name == "Flower1" then
+					topos(v.CFrame)
+				end
+			end
+		end)
+	end
 
 	function isnil(thing)
 		return (thing == nil)
@@ -3293,7 +4308,7 @@ if World2 then
 			UpdateChestChams() 
 		end
 	end)
-	DevilFruit:Toggle("ESP Devil Fruit",true,function(a)
+	DevilFruit:Toggle("ESP Devil Fruit",false,function(a)
 		DevilFruitESP = a
 		while DevilFruitESP do wait()
 			UpdateDevilChams() 
@@ -3634,6 +4649,171 @@ Misc:Seperator(" Player Misc ")
         end
     end)
 
+Misc:Toggle("No Clip",_G.No_clip,function(value)
+ _G.No_clip = value
+end)
+
+
+spawn(function()
+    pcall(function()
+        game:GetService("RunService").Stepped:Connect(function()
+            if _G.No_clip then
+                for _, v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+                    if v:IsA("BasePart") then
+                        v.CanCollide = false    
+                    end
+                end
+            end
+        end)
+    end)
+end)
+
+  function NoDodgeCool()
+        if nododgecool then
+            for i,v in next, getgc() do
+                if game:GetService("Players").LocalPlayer.Character.Dodge then
+                    if typeof(v) == "function" and getfenv(v).script == game:GetService("Players").LocalPlayer.Character.Dodge then
+                        for i2,v2 in next, getupvalues(v) do
+                            if tostring(v2) == "0.1" then
+                            repeat wait(.1)
+                                setupvalue(v,i2,0)
+                            until not nododgecool
+                            end
+                        end
+                    end
+                end
+            end
+        end
+  end
+   
+    
+    local LocalPlayer = game:GetService'Players'.LocalPlayer
+    local originalstam = LocalPlayer.Character.Energy.Value
+    function infinitestam()
+        LocalPlayer.Character.Energy.Changed:connect(function()
+            if InfiniteEnergy then
+                LocalPlayer.Character.Energy.Value = originalstam
+            end 
+        end)
+    end
+    
+    spawn(function()
+        pcall(function()
+            while wait(.1) do
+                if InfiniteEnergy then
+                    wait(0.1)
+                    originalstam = LocalPlayer.Character.Energy.Value
+                    infinitestam()
+                end
+            end
+        end)
+    end)
+
+Misc:Toggle("Dodge No Cooldown",false,function(value)
+        nododgecool = value
+        NoDodgeCool()
+    end)
+    
+    Misc:Toggle("Auto Active Race",_G.AutoAgility,function(value)
+        _G.AutoAgility = value
+    end)
+    
+    spawn(function()
+        pcall(function()
+            while wait() do
+                if _G.AutoAgility then
+                    game:GetService("ReplicatedStorage").Remotes.CommE:FireServer("ActivateAbility")
+                end
+            end
+        end)
+    end)
+    
+    Misc:Toggle("Infinite Ability",false,function(value)
+        InfAbility = value
+        if value == false then
+            game:GetService("Players").LocalPlayer.Character.HumanoidRootPart:FindFirstChild("Agility"):Destroy()
+        end
+    end)
+    
+    spawn(function()
+        while wait() do
+            if InfAbility then
+                InfAb()
+            end
+        end
+    end)
+    
+    Misc:Toggle("Infinite Obversation Range",getgenv().InfiniteObRange,function(value)
+        getgenv().InfiniteObRange = value
+        local VS = game:GetService("Players").LocalPlayer.VisionRadius.Value
+        while getgenv().InfiniteObRange do
+            wait()
+            local player = game:GetService("Players").LocalPlayer
+            local char = player.Character
+            local VisionRadius = player.VisionRadius
+            if player then
+                if char.Humanoid.Health <= 0 then 
+                    wait(5) 
+                end
+                VisionRadius.Value = math.huge
+            elseif getgenv().InfiniteObRange == false and player then
+                VisionRadius.Value = VS
+            end
+        end
+    end)
+    
+    Misc:Toggle("Infinite Geppo",getgenv().InfGeppo,function(value)
+        getgenv().InfGeppo = value
+    end)
+    
+    spawn(function()
+        while wait() do
+            pcall(function()
+                if getgenv().InfGeppo then
+                    for i,v in next, getgc() do
+                        if game:GetService("Players").LocalPlayer.Character.Geppo then
+                            if typeof(v) == "function" and getfenv(v).script == game:GetService("Players").LocalPlayer.Character.Geppo then
+                                for i2,v2 in next, getupvalues(v) do
+                                    if tostring(i2) == "9" then
+                                        repeat wait(.1)
+                                            setupvalue(v,i2,0)
+                                        until not getgenv().InfGeppo or game:GetService("Players").LocalPlayer.Character.Humanoid.Health <= 0 
+                                    end
+                                end
+                            end
+                        end
+                    end
+                end
+            end)
+        end
+    end)
+    
+    Misc:Toggle("Infinite Soru",getgenv().InfSoru,function(value)
+        getgenv().InfSoru = value
+    end)
+    
+    spawn(function()
+        while wait() do
+            pcall(function()
+                if getgenv().InfSoru and game:GetService("Players").LocalPlayer.Character:FindFirstChild("HumanoidRootPart") ~= nil  then
+                    for i,v in next, getgc() do
+                        if game:GetService("Players").LocalPlayer.Character.Soru then
+                            if typeof(v) == "function" and getfenv(v).script == game:GetService("Players").LocalPlayer.Character.Soru then
+                                for i2,v2 in next, getupvalues(v) do
+                                    if typeof(v2) == "table" then
+                                        repeat wait(.1)
+                                            v2.LastUse = 0
+                                        until not getgenv().InfSoru or game:GetService("Players").LocalPlayer.Character.Humanoid.Health <= 0
+                                    end
+                                end
+                            end
+                        end
+                    end
+                end
+            end)
+        end
+    end)
+    
     Misc:Toggle("Walk on Water",true,function(value)
         _G.WalkWater = value
     end)
@@ -3664,6 +4844,21 @@ spawn(function()
 				end)
 			end
 		end)
+    Misc:Toggle("Fly",false,function(value)
+        Fly = value
+    end)
+    
+    spawn(function()
+        while wait() do
+            pcall(function()
+                if Fly then
+                    fly()
+                end
+            end)
+        end
+    end)
+    
+        
     Misc:Button("Unlock FPS",function()
         setfpscap(100)
     end)
