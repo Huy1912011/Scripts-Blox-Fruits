@@ -3567,7 +3567,7 @@ end)
 
 local FastAttackVip = require(game:GetService("Players").LocalPlayer.PlayerScripts.FastAttackVip)
 local CameraVip = require(game.ReplicatedStorage.Util.CameraVipShaker)
-CameraVip/:Stop()
+CameraVip:Stop()
 coroutine.wrap(function()
     game:GetService("RunService").Stepped:Connect(function()
         if getupvalues(FastAttackVip)[2]['activeController'].timeToNextAttack then
