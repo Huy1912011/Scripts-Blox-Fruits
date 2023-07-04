@@ -2336,12 +2336,11 @@ Main:Seperator("「 ESP 」")
 end)
 
 spawn(function()
-			while wait() do
+			while wait(3) do
 				if _G.Grabfruit then
 					for i,v in pairs(game.Workspace:GetChildren()) do
 						if string.find(v.Name, "Fruit") then
 							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Handle.CFrame
-							wait(3)
 						end
 					end
 				end
