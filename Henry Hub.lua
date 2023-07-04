@@ -3560,7 +3560,6 @@ Anti:Toggle("Anti Cheat Bypass(❗Do Not Turn Off❗)", true, function(value)
 CheckAntiCheatBypass()
   Notification("Anti Cheat Bypass Activated ✅")
 end)
-
 Anti:Toggle("Anti AFK", true, function()
 local vu = game:GetService("VirtualUser")
 repeat wait() until game:IsLoaded() 
