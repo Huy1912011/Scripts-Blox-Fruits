@@ -1,106 +1,109 @@
-repeat wait() until game:IsLoaded()
-getgenv().Settings = {
-    ["Team"] = "Pirates", -- Auto Join Marines, Pirates
-    ["Gun Method"] = true, -- Turn On Melee And Gun, Please Turn Off Invisible Before Use 
-    ['Spam Skills'] = true, -- Will Auto Spam All Skills
-    ['Webhook'] = '', -- Your Url Webhook
+getgenv().Setting = {
+    ["Team"] = "Pirates", --Marines,Pirates
+    ["Webhook"] = {
+        ["Enabled"] = false,
+        ["Url Webhook"] = "", --Your Url
+    },
+    ["Misc"] = {
+        ["AutoBuyRandomandStoreFruit"] = false,
+        ["AutoBuySurprise"] = false,
+    },
     ["Click"] = {
         ["Enable"] = true,
-        ["Click Gun"] = true,
-        ['Low Health'] = true,
-        ["On Low Health Disable"] = false,
+        ["Click Gun"] = false,
+        ["OnLowHealthDisable"] = false,
+        ["LowHealth"] = 8000,
     },
-    ["Safe Zone"] = {
+    ["SafeZone"] = {
         ["Enable"] = true,
-        ["Low Health"] = 5000,
-        ["Max Health"] = 8000,
-        ["Teleport Y"] = 500,
+        ["LowHealth"] = 5000,
+        ["MaxHealth"] = 8000,
+        ["Teleport Y"] = 1000
     },
-    ["Miscellaneous"] = {
-        ["Invisible"] = false,
-        ['Auto Cyborg'] = true, -- Auto Turn On Cyborg
-        ["Auto Race V4"] = true, -- Auto Turn On Race V4
-        ["White Screen"]  = false, 
-        ["Auto Buy Surprise"] = true,
-        ['Say Message When Get Kill'] = {'Adel On Top'}, -- Auto Say Message What You Put In This When You Killed Players
-        ["Auto Buy Randomand Store Fruit"] = true,
+    ["Race V4"] = {
+        ["Enable"] = true,
     },
+    ["Invisible"] = true,
+    ["White Screen"] = false,
+    ["GunMethod"] = false, --Support Only Melee And Gun,Not Invisible, Turn On Enabled Gun and Melee Please
+    ["SpamSkill"] = true, -- Will use all skills as fast as possbile ignore holding skills
     ["Weapons"] = {
         ["Melee"] = {
             ["Enable"] = true,
-            ['Delay'] = 1,
+            ["Delay"] = 2,
             ["Skills"] = {
                 ["Z"] = {
                     ["Enable"] = true,
-                    ["Hold Time"] = 3,
+                    ["HoldTime"] = 0,
                 },
-                ["X"] = {
+               [ "X"] = {
                     ["Enable"] = true,
-                    ["Hold Time"] = 0,
+                    ["HoldTime"] = 0,
                 },
 
                 ["C"] = {
                     ["Enable"] = true,
-                    ["Hold Time"] = 0,
+                    ["HoldTime"] = 0,
                 },
             },
         },
         ["Blox Fruit"] = {
             ["Enable"] = false,
-            ['Delay'] = 1,
+            ["Delay"] = 3,
             ["Skills"] = {
                 ["Z"] = {
-                    ["Enable"] = true,
-                    ["Hold Time"] = 2,
+                    ["Enable"] = false,
+                    ["HoldTime"] = 2,
                 },
                 ["X"] = {
-                    ["Enable"] = true,
-                    ["Hold Time"] = 0,
+                    ["Enable"] = false,
+                    ["HoldTime"] = 0,
                 },
 
                 ["C"] = {
-                    ["Enable"] = true,
-                    ["Hold Time"] = 0,
+                    ["Enable"] = false,
+                    ["HoldTime"] = 0,
                 },
                 ["V"] = {
-                    ["Enable"] = true,
-                    ["Hold Time"] = 0,
+                    ["Enable"] = false,
+                    ["HoldTime"] = 0,
                 },
                 ["F"] = {
-                    ["Enable"] = true,
-                    ["Hold Time"] = 0,
+                    ["Enable"] = false,
+                    ["HoldTime"] = 0,
                 },
             },
         },
         ["Gun"] = {
-            ["Enable"] = true,
-            ['Delay'] = 1,
+            ["Enable"] = false,
+            ["Delay"] = 3,
             ["Skills"] = {
                 ["Z"] = {
                     ["Enable"] = true,
-                    ["Hold Time"] = 0,
+                    ["HoldTime"] = 1,
                 },
                 ["X"] = {
                     ["Enable"] = true,
-                    ["Hold Time"] = 0,
+                    ["HoldTime"] = 0,
                 },
             },
         },
         ["Sword"] = {
             ["Enable"] = true,
-            ['Delay'] = 1,
+            ["Delay"] = 1,
             ["Skills"] = {
                 ["Z"] = {
                     ["Enable"] = true,
-                    ["Hold Time"] = 0,
+                    ["HoldTime"] = 1,
                 },
                 ["X"] = {
                     ["Enable"] = true,
-                    ["Hold Time"] = 0,
+                    ["HoldTime"] = 0,
                 },
             },
         },
     }
 }
-
-loadstring(game:HttpGet('https://raw.githubusercontent.com/AdelOnTheTop/Adel-Hub/main/BountyScript.lua'))()
+repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
+getgenv().Key = ''
+loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BountyShit.lua"))()
