@@ -7,6 +7,10 @@ _G["HoHo Hub Auto Bounty V3"] = {
     ["Don't attack friends"] = true,
     ["Don't attack player have cup"] = false,
     ["Distance Attack Y"] = 0, -- Shark Race = 0; Another >= 6
+    ["Chat After Kill"] = {
+        ["Active"] = false,
+        ["List Chat"] = {"i have a good gaming chair","No skill? Use Hoho hub"},
+    },
     ["Yourself"] = {
         ["Invisible From Ken"] = true,
         ["No Stun"] = true,
