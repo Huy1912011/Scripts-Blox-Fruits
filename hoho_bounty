@@ -17,7 +17,7 @@ _G["HoHo Hub Auto Bounty V3"] = {
     },
     ["SafeZone"] = {Enabled = true, ["Health Left (%)"] = 40},
     ["Time Control"] = {
-        ["Max Time Target Player"] = 120,
+        ["Max Time Target Player"] = 99999999,
     },
     ["Abilities"] = {
         ["Auto Click"] = true,
