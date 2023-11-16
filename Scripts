@@ -1,5 +1,5 @@
 Henry Hub:
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Huy1912011/script/main/Henry%20Hub.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Huy1912011/Scripts-Blox-Fruits/main/Henry%20Hub"))()
 
 Mystic Hub:
 loadstring(game:HttpGet('https://raw.githubusercontent.com/ZoiIntra/Dec/main/mystichub'))()
@@ -37,3 +37,9 @@ game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId,'')
 
 Mtriet Hub:
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Minhtriettt/Free-Script/main/MTriet-Hub.lua"))()
+
+Banana Hub-Free:
+getgenv().Key = "https://banana-hub.xyz/getkey"
+getgenv().OldBanana = false
+repeat task.wait() until game:IsLoaded()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaHub.lua"))()
