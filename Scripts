@@ -43,3 +43,6 @@ getgenv().Key = "https://banana-hub.xyz/getkey"
 getgenv().OldBanana = false
 repeat task.wait() until game:IsLoaded()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaHub.lua"))()
+
+Hitbox v5:
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Huy1912011/Scripts-Blox-Fruits/main/Hitbox%20Gui%20V5"))()
