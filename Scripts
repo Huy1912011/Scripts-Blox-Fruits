@@ -1,6 +1,9 @@
 Henry Hub:
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Huy1912011/Scripts-Blox-Fruits/main/Henry%20Hub"))()
 
+Henry Hub2 - Ít chức năng:
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Huy1912011/Scripts-Blox-Fruits/main/Henry%20Hub2"))()
+
 Mystic Hub:
 loadstring(game:HttpGet('https://raw.githubusercontent.com/ZoiIntra/Dec/main/mystichub'))()
 
