@@ -3,7 +3,7 @@ if game.PlaceId == 2753915549 then
 _G.AUTOHAKI = true
 
 function autohaki()
-while wait(.1) do
+while _G.AUTOHAKI == true do
             if not game.Players.LocalPlayer.Character:FindFirstChild("HasBuso") then
                 local args = {
                     [1] = "Buso"
