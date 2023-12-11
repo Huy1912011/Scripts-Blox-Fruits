@@ -1,12 +1,9 @@
 if game.PlaceId == 2753915549 then
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Title of the library", HidePremium = false, IntroEnabled = false, IntroText = "Vip", SaveConfig = true, ConfigFolder = "OrionTest"})
 
 _G.AUTOHAKI = true
 
 function autohaki()
 while wait(.1) do
-        if _G.AUTOHAKI then 
             if not game.Players.LocalPlayer.Character:FindFirstChild("HasBuso") then
                 local args = {
                     [1] = "Buso"
@@ -14,7 +11,6 @@ while wait(.1) do
                 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
             end
         end
-	end
 	end
 
 local newTab = Window:MakeTab({
