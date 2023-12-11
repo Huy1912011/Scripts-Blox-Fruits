@@ -6,5 +6,12 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+HắcTab:AddToggle({
+	Name = "???",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+	end    
+})
 end
 OrionLib:Init()
