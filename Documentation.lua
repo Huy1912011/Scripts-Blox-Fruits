@@ -5,14 +5,17 @@ local Window = OrionLib:MakeWindow({Name = "Vip", HidePremium = false, IntroEnab
 _G.AUTOHAKI = true
 
 function autohaki()
+while wait(.1) do
 while _G.AUTOHAKI == true do
             if not game.Players.LocalPlayer.Character:FindFirstChild("HasBuso") then
                 local args = {
                     [1] = "Buso"
                 }
                 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+		wait(0.1)
             end
         end
+	end
 	end
 
 local newTab = Window:MakeTab({
