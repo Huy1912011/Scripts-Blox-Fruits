@@ -108,4 +108,3 @@ Tab1:AddToggle({
 })
 
 print(OrionLib.Flags["toggle"].Value)
-OrionLib:Destroy()
