@@ -15,6 +15,7 @@ while wait(.1) do
             end
         end
 	end
+	end
 
 local newTab = Window:MakeTab({
 	Name = "Hắc",
