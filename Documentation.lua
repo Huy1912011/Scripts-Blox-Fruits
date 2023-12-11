@@ -20,7 +20,7 @@ local newTab = Window:MakeTab({
 })
 newTab:AddToggle({
 	Name = "???",
-	Default = false,
+	Default = true,
 	Callback = function(Value)
 		_G.AUTOHAKI = Value
 		autohaki()
