@@ -1,3 +1,4 @@
+if game.PlaceId == 2753915549 then
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Title of the library", HidePremium = false, IntroEnabled = false, IntroText = "Vip", SaveConfig = true, ConfigFolder = "OrionTest"})
 
@@ -28,4 +29,6 @@ newTab:AddToggle({
 		autohaki()
 	end    
 })
+
+	end
 OrionLib:Init()
