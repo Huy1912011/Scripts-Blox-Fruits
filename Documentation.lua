@@ -11,7 +11,7 @@ new1:AddToggle({
 	Name = "Test",
 	Default = false,
 	Callback = function(Value)
-		_G.AUTOHAKI = value
+		_G.AUTOHAKI = Value
 	end    
 })
 
