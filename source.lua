@@ -1,5 +1,3 @@
-
-
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
 local RunService = game:GetService("RunService")
@@ -144,6 +142,11 @@ local function CreateElement(ElementName, ElementFunction)
 		return ElementFunction(...)
 	end
 end
+
+local Domadiclib = Instance.new("ScreenGui")
+    Domadiclib.Name = "Domadiclib"
+    Domadiclib.Parent = game.CoreGui
+    Domadiclib.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 local Main = Instance.new("Frame")
     Main.Name = "Main"
