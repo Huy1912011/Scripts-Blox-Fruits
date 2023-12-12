@@ -15,7 +15,7 @@ new1:AddToggle({
 	end    
 })
 
-spawn(function()
+spawn(function(Value)
     while wait(.1) do
         if _G.AUTOHAKI then 
             if not game.Players.LocalPlayer.Character:FindFirstChild("HasBuso") then
