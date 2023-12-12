@@ -1,4 +1,4 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Huy1912011/Scripts-Blox-Fruits/main/source.lua')))()
 local Window = OrionLib:MakeWindow({Name = "Vip", HidePremium = false, IntroEnabled = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 if game.PlaceId == 2753915549 then
@@ -76,14 +76,10 @@ local Misc = Window:MakeTab({
 })
 
 Settings:AddToggle({
-	Name = "Auto Haki",
-	Default = true,
-	Callback = function(Value)
-		_G.AUTOHAKI = Value
-	end    
-})
-
-spawn(function(Value)
+	NAddToggle("Auto Haki",true,function(value)
+_G.AUTOHAKI = value
+end)
+spawn(function()
     while wait(.1) do
         if _G.AUTOHAKI then 
             if not game.Players.LocalPlayer.Character:FindFirstChild("HasBuso") then
