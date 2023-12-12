@@ -2,7 +2,13 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 local Window = OrionLib:MakeWindow({Name = "Vip", HidePremium = false, IntroEnabled = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 local new1 = Window:MakeTab({
-	Name = "New",
+	Name = "1",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local new2 = Window:MakeTab({
+	Name = "2",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -27,3 +33,11 @@ spawn(function(Value)
         end
     end
 end)
+
+new2:AddButton({
+	Name = "Remove fog",
+	Callback = function()
+      		game:GetService("Lighting").LightingLayers:Destroy()
+	game:GetService("Lighting").Sky:Destroy()
+  	end    
+})
