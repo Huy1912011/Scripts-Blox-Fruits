@@ -36,7 +36,7 @@ end)
 
 new2:AddButton({
 	Name = "Remove fog",
-	Callback = function()
+	Callback = function(qww)
       		game:GetService("Lighting").LightingLayers:Destroy()
 	game:GetService("Lighting").Sky:Destroy()
   	end    
