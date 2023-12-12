@@ -34,10 +34,14 @@ spawn(function(Value)
     end
 end)
 
+function fog()
+	game:GetService("Lighting").LightingLayers:Destroy()
+	game:GetService("Lighting").Sky:Destroy()
+end
+
 new2:AddButton({
 	Name = "Remove fog",
-	Callback = function(qww)
-      		game:GetService("Lighting").LightingLayers:Destroy()
-	game:GetService("Lighting").Sky:Destroy()
+	Callback = function()
+        fog()
   	end    
 })
