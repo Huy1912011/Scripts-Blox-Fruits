@@ -34,14 +34,9 @@ spawn(function(Value)
     end
 end)
 
-function fog()
-	game:GetService("Lighting").LightingLayers:Destroy()
-	game:GetService("Lighting").Sky:Destroy()
-end
-
 new2:AddButton({
-	Name = "Remove fog",
+	Name = "Tp to sea 2",
 	Callback = function()
-        fog()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelDressrosa")
   	end    
 })
