@@ -1,0 +1,8 @@
+spawn(function()
+while wait() do
+getgenv().rejoin = game:GetService("CoreGui").RobloxPromptGui.promptOverlay.ChildAdded:Connect(function(child)
+game:GetService("TeleportService"):Teleport(game.PlaceId)
+wait(3)
+end)
+end
+end)
