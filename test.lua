@@ -1870,17 +1870,16 @@ Bac0:Label("Auto rejoin the server after 25 minutes")
 Bac0:Label("Use only when hanging from the machine")
 Bac0:Label("If you do not hang up the device, the function can be turned off!")
 
-local Bac2 = task.wait(20, function()
+local Bac2 = task.wait(10, function()
     game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
     end)
 
 Bac0:Toggle("Bypass Anti-Chest",true,function(value)
  _G.Bac1 = value
- end)
- 
- if _G.Bac1 == false then
+		if _G.Bac1 == false then
             task.cancel(Bac2)
-        end
+		end
+ end)
  
  if _G.Bac1 then
         Bac2()
