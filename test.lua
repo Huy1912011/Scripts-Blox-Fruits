@@ -1876,7 +1876,7 @@ task.delay(10, function()
     end)
     end
 
-Bac0:Toggle("Bypass Anti-Chest",false,function(value)
+Bac0:Toggle("Bypass Anti-Chest",_G.Bac1,function(value)
  _G.Bac1 = value
  end)
 
