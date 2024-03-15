@@ -1894,7 +1894,7 @@ spawn(function()
   end)
   
   if _G.Bac4 == true then
-  Bac3 = coroutine.creat(Bac2)
+  Bac3 = coroutine.create(Bac2)
   coroutine.resume(Bac3)
   end
         
