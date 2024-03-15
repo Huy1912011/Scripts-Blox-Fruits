@@ -1871,13 +1871,11 @@ Bac0:Label("Use only when hanging from the machine")
 Bac0:Label("If you do not hang up the device, the function can be turned off!")
 
 local function Bac2()
-task.wait(10, function()
+task.wait(10)
     game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
-    end)
     end
     
 local Bac3 = coroutine.create(Bac2)
-coroutine.resume(Bac3)
 
 Bac0:Toggle("Bypass Anti-Chest",true,function(value)
  _G.Bac1 = value
