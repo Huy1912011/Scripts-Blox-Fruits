@@ -1877,6 +1877,7 @@ task.wait(10, function()
     end
     
 local Bac3 = coroutine.create(Bac2)
+coroutine.resume(Bac3)
 
 Bac0:Toggle("Bypass Anti-Chest",true,function(value)
  _G.Bac1 = value
