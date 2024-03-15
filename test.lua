@@ -1887,13 +1887,13 @@ Bac0:Toggle("Bypass Anti-cheat",true,function(value)
 
 spawn(function()
   while wait() do
-  if _G.Bac4 == true then
+  if _G.Bac4 == false then
   coroutine.close(Bac3)
   end
   end
   end)
   
-  if _G.Bac4 == false then
+  if _G.Bac4 == true then
   Bac3 = coroutine.creat(Bac2)
   coroutine.resume(Bac3)
   end
