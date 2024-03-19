@@ -9,7 +9,8 @@ local HenryImageUI = Instance.new("ImageLabel")
 
         HenryToggleUI.Name = "HenryToggleUI"
         HenryToggleUI.Parent = HenryScreen
-        HenryToggleUI.BackgroundTransparency= 0.5, BackgroundColor3 = Color3.fromRGB(255,192,203)
+        HenryToggleUI.BackgroundTransparency = 0.5
+        HenryToggleUI.BackgroundColor3 = Color3.fromRGB(255,192,203)
         HenryToggleUI.BorderSizePixel = 0
         HenryToggleUI.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
         HenryToggleUI.Size = UDim2.new(0, 50, 0, 50)
