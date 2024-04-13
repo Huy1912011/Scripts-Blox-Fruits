@@ -1,0 +1,16 @@
+getgenv().Config = {
+    ["StartFarmChest"] = true,
+    ["Team"] = "Pirates",
+    ["TimeReset"] = 5, -- No Edit
+    ["White Screen"] = false,
+    ["Stop The God's Chalice"] = false,
+    ["Stop The Fist of Darkness"] = false,
+    ["HopServer"] = {
+        ["Enable"] = true,
+        ["BypassServer"] = true,
+        ["Region"] = "??"
+    },
+    ["Server Discord"] = "https://discord.gg/mFzWdBUn45"
+}
+repeat wait() until game:IsLoaded()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Minhtriettt/Free-Script/main/Chest-Farm.lua"))()
