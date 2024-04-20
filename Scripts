@@ -1,12 +1,4 @@
-Henry Hub:
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Huy1912011/Scripts-Blox-Fruits/main/Henry%20Hub"))()
-
-Henry Hub2 - Ít chức năng:
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Huy1912011/Scripts-Blox-Fruits/main/Henry%20Hub2"))()
-
-Mystic Hub:
-loadstring(game:HttpGet('https://raw.githubusercontent.com/ZoiIntra/Dec/main/mystichub'))()
-
+----------BF----------
 Hoho Hub v3:
 _G.HohoVersion = "v3"
 loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
@@ -41,11 +33,11 @@ game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId,'')
 Mtriet Hub:
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Minhtriettt/Free-Script/main/MTriet-Hub.lua"))()
 
-Banana Hub-Free:
-getgenv().Key = "https://banana-hub.xyz/getkey"
-getgenv().OldBanana = false
-repeat task.wait() until game:IsLoaded()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaHub.lua"))()
+W-Azure v2 true free:
+getgenv().Team = "Pirates"
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
 
 Hitbox v5:
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Huy1912011/Scripts-Blox-Fruits/main/Hitbox%20Gui%20V5"))()
+----------Pls Donate----------
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CF-Trail/tzechco-PlsDonateAutofarmBackup/main/old.lua"))()
