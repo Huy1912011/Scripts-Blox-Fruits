@@ -37,6 +37,11 @@ W-Azure v2 true free:
 getgenv().Team = "Pirates"
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
 
+Xero Hub:
+getgenv().Team = "Marines" -- Pirates/Marines
+getgenv().Fix_Lag = true -- true/false
+loadstring(game:HttpGet("https://xerohub.click/script/main.lua"))()
+
 Hitbox v5:
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Huy1912011/Scripts-Blox-Fruits/main/Hitbox%20Gui%20V5"))()
 ----------Pls Donate----------
