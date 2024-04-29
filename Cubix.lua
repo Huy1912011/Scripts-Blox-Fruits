@@ -899,38 +899,32 @@ local function HCRL_fake_script() -- PasteBTN.LocalScript
 	end
 end
 coroutine.wrap(HCRL_fake_script)()
-local function ZTADS_fake_script() -- ExecBTN.LocalScript 
-	local script = Instance.new('LocalScript', ExecBTN)
+local function ZTADS_fake_script()
+    local script = Instance.new('LocalScript', ExecBTN)
+    local txtbox = script.Parent.Parent.Parent.Display.ScrollingFrame.TextBox
+    local btn = script.Parent
 
-	local txtbox = script.Parent.Parent.Parent.Display.ScrollingFrame.TextBox
-	local btn = script.Parent
-	
-	btn.MouseButton1Click:Connect(function()
-	local executecode = executecode and clonefunction(executecode) or function(v)
-		task.spawn(loadstring(v));
-	
-	executecode(txtbox.Text)
-	end
-	-- notification
-	
-	local Bindable = Instance.new("BindableFunction")
-	Bindable.OnInvoke = Callback
-	
-	game.StarterGui:SetCore("SendNotification", {
-		Title = "Cubix | Android";
-		Text = "Executed the script.";
-		Duration = "10";
-		Button1 = "Close Notification";
-		Callback = Bindable
-	})
-	end)
-	
-	function Callback(answer)
-	end
-	
-	
-	
+    btn.MouseButton1Click:Connect(function()
+        local executecode = executecode and clonefunction(executecode) or function(v)
+            task.spawn(loadstring(v))
+        end
+        executecode(txtbox.Text)
+    end)
+
+    local Bindable = Instance.new("BindableFunction")
+    Bindable.OnInvoke = function(answer)
+        -- Callback logic here
+    end
+
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "Cubix | Android";
+        Text = "Executed the script.";
+        Duration = 10;
+        Button1 = "Close Notification";
+        Callback = Bindable;
+    })
 end
+
 coroutine.wrap(ZTADS_fake_script)()
 local function DWBJVHF_fake_script() -- CodeIconBTN.LocalScript 
 	local script = Instance.new('LocalScript', CodeIconBTN)
