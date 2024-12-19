@@ -2,7 +2,7 @@ Roblox VNG - Delta
 -
 [Roblox Login VNG](https://www.mediafire.com/file/f4m0uri2pc6q4u6/V2.653_Login_VNG.apk/file)
 
-[Roblox VNG - Delta](https://www.mediafire.com/file/iocbo67lv2ccn2q/V2.653_Delta_X_VNG.apk/file)
+[Roblox VNG - Delta](https://spyderrock.com/oM653059-2.apk)
 
 Banana Hub (Free)
 -
