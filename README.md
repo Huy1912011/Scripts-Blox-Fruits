@@ -15,3 +15,10 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitin
 ```
 https://ads.luarmor.net/get_key?for=VHFslhWdrPey
 ```
+
+HoHo Hub
+-
+```
+_G.HohoVersion = "v4"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
+```
