@@ -23,6 +23,80 @@ _G.HohoVersion = "v4"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
 ```
 
+Teus Kaitun
+-
+```
+-- Quest
+_G.Quest = { 
+    ['RGB Aura Haki'] = true,
+    ['Pull Lever'] = true,
+    ['Quest Dough Awaken'] = true
+}
+
+-- Race
+_G.Race = { 
+    ['Select Race'] = {'Human','Fishman','Skypiea','Mink'},
+    ['Lock Race'] = false,
+    ['Evo Race V3'] = false
+}
+
+-- Melee
+_G.Melee = { 
+    ['Godhuman'] = true
+}
+
+-- Sword
+_G.Sword = { 
+    ['Saber'] = true,
+    ['Midnight Blade'] = true,
+    ['Shisui'] = true,
+    ['Saddi'] = true,
+    ['Wando'] = true,
+    ['Yama'] = true,
+    ['Koko'] = false,
+    ['Rengoku'] = true,
+    ['Canvander'] = true,
+    ['Buddy Sword'] = true,
+    ['Twin Hooks'] = true,
+    ['SpikeyTrident'] = true,
+    ['Hallow Scryte'] = true,
+    ['Dark Dagger'] = true,
+    ['Tushita'] = true,
+    ['True Triple Katana'] = true,
+    ['Cursed Dual Katana'] = true,
+    ['Shark Anchor'] = true
+}
+
+-- Farm Gun
+_G.Gun = {  
+    ['Kabucha'] = true,
+    ['Acidum Rifle'] = true,
+    ['Soul Guitar'] = true, 
+    ['Serpent Bow'] = true
+}
+
+-- Devil Fruit
+_G.Fruit = { 
+    ['Main Fruit'] = {''},
+    ['Select Fruit'] = {''}
+}
+
+-- Mastery
+_G.Mastery = { 
+    ['Melee'] = false,
+    ['Sword'] = false,
+    ['Fruit'] = false
+}
+
+-- Setting
+_G.Setting = {
+    ['FPS Booster'] = true,
+    ['Auto Close Ui'] = false 
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Teus-Scripts/Teus-Hub1/refs/heads/main/kaitun.lua"))()
+```
+
 W-azure (Free)
 -
 ```
