@@ -29,6 +29,11 @@ getgenv().FixCrash = true
 getgenv().FixCrash2 = true
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
 ```
+Bypass Anti-Chest (lỏ)
+-
+```
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Huy1912011/Scripts-Blox-Fruits/refs/heads/main/Bypass%20Anti%20cheat.lua"))()
+```
 
 Server Hop (ID)
 -
