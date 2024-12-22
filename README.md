@@ -2,7 +2,7 @@ Roblox VNG - Delta
 -
 [Roblox Login VNG](https://www.mediafire.com/file/f4m0uri2pc6q4u6/V2.653_Login_VNG.apk/file)
 
-[Roblox VNG - Delta](https://modsfire.com/1LcZ86w82UoA9DR/92efd)
+[Roblox VNG - Delta](https://modsfire.com/1LcZ86w82UoA9DR)
 
 Banana Hub (Free)
 -
@@ -21,7 +21,7 @@ _G.HohoVersion = "v4"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
 ```
 
-W-azure
+W-azure (Free)
 -
 ```
 getgenv().Team = "Marines"
