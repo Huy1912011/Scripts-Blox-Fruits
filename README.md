@@ -23,23 +23,12 @@ _G.HohoVersion = "v4"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
 ```
 
-Xero Hub (Kaitun)
+Ganteng Hub
 -
+Có chức năng 🔰 Anti Reset/Ban
+nhưng chưa biết có hoạt động tốt không!
 ```
--- Max level, godhuman, CDK, soul guitar
-getgenv().Configs = {
-    ["Team"] = "Pirates",
-    ["FPS Boost"] = true,
-    ["Farm Boss Drops"] = {
-        ["Enable"] = false,
-        ["When x2 Exp Expired"] = false
-    },
-    ["Hop Player Near"] = false,
-    ["Soul Guitar"] = true,
-    ["Find Fruit"] = false, -- Will find 1m+ fruit to unlock swan door to access third sea
-    ["Cursed Dual Katana"] = true
-}
-loadstring(game:HttpGet("https://raw.githubusercontent.com/verudous/Xero-Hub/refs/heads/main/kaitun.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/516a5669fc39b4945cd0609a08264505.lua"))()
 ```
 
 W-azure (Free)
