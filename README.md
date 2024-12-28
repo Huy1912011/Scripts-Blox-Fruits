@@ -18,7 +18,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitin
 
 HoHo Hub
 -
-🛡️Anti Reset/Ban
+🛡️Anti Ban/Reset✅
 ```
 _G.HohoVersion = "v4"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
@@ -26,8 +26,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/L
 
 Ganteng Hub
 -
-Có chức năng 🔰 Anti Reset/Ban
-nhưng chưa biết có hoạt động tốt không!
+🛡️Anti Ban/Reset✅
 ```
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/516a5669fc39b4945cd0609a08264505.lua"))()
 ```
@@ -40,10 +39,10 @@ getgenv().FixCrash = true
 getgenv().FixCrash2 = true
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
 ```
-Bypass Anti-Chest (lỏ)
+Turbo Fly
 -
 ```
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Huy1912011/Scripts-Blox-Fruits/refs/heads/main/Bypass%20Anti%20cheat.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/refs/heads/main/Fly.lua"))()
 ```
 
 Server Hop (ID)
