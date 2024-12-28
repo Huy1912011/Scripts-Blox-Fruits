@@ -6,6 +6,8 @@ Roblox VNG - Delta
 
 [Roblox VNG - Delta](https://modsfire.com/1LcZ86w82UoA9DR)
 
+[Roblox VNG Lite - Delta No Login!](https://modsfire.com/ovp368T2T8xHt2x)
+
 Banana Hub (Free)
 -
 ```
