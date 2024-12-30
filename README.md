@@ -49,6 +49,7 @@ loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc61
 AnDepZaiHub
 -
 ```
+repeat wait() until game:IsLoaded() and game.Players.LocalPlayer 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AnDepZaiHub/AnDepZaiHubBeta/refs/heads/main/AnDepZaiHubNewUpdated.lua"))()
 ```
 
