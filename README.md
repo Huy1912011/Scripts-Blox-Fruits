@@ -45,6 +45,13 @@ getgenv().FixCrash = true
 getgenv().FixCrash2 = true
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
 ```
+
+AnDepZaiHub
+-
+```
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AnDepZaiHub/AnDepZaiHubBeta/refs/heads/main/AnDepZaiHubNewUpdated.lua"))()
+```
+
 Turbo Fly
 -
 ```
