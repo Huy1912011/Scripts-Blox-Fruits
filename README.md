@@ -1,6 +1,6 @@
 Roblox
 -
-[Roblox lite - Delta 64bit](https://spyderrock.com/oM653059-2.apk)
+[Roblox lite - Codex 64bit](https://qiwi.gg/file/d45d9299-2)
 
 Roblox VNG
 -
