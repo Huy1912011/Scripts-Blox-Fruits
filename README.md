@@ -50,34 +50,45 @@ Kaitun BF
 -
 ```
 getgenv().simple_settings = {
-    ["MASTERY"] = {
-        ["ACTIVE"] = true,
-        ["METHOD"] = "Half", -- Method for gaining mastery, "Half"[300] or "Full"[600]
+    ["MODE"] = "Melee", -- Using "Melee" or "Gun" method
+    ["MASTERY"] = { -- Settings related to leveling up weapon or skill mastery
+        ["ACTIVE"] = true, -- Enable or disable mastery leveling (true = enabled, false = disabled)
+        ["METHOD"] = "Half", -- Method for gaining mastery, "Half"[350] or "Full"[600]
     },
-    ["OBJECTIVE"] = {
-        ["GODHUMAN"] = true,
-        ["RACE-V3"] = true,race to V3 if possible Human, Mink, (Fishman, Ghoul, Cyborg) soon
-        ["FRAGMENT"] = 100000,
+
+    ["OBJECTIVE"] = { -- Goals for farming and unlocking features
+        ["GODHUMAN"] = true, -- Automatically unlock the "Godhuman" fighting style
+        ["RACE-CONFIGURE"] = {
+            ["RACE"] = {"Human", "Skypiea", "Fishman", "Mink"}, -- List -- "Human", "Skypiea", "Fishman", "Mink"
+            ["RACE-LOCK"] = true, -- Automatically change the character race if not in the list
+            ["RACE-V3"] = true, -- Automatically upgrade character race to V3 if possible Human, Mink, Fishman, (Ghoul, Cyborg) soon
+        },
+        ["FRAGMENT"] = 100000, -- Limit number of fragments to collect
+
         -- SWORD
         ["CANVANDER"] = true,
         ["BUDDY-SWORD"] = true,
         ["CURSED-DUAL-KATANA"] = true,
-        ["SHARK-ANCHOR"] = true, -- soon.
+        ["SHARK-ANCHOR"] = true, -- soon..
+
         --GUN
         ["ACIDUM-RIFLE"] = true,
         ["VENOM-BOW"] = true,
         ["SOUL-GUITAR"] = true,
+
+        -- AURA
+        ["COLOR-HAKI"] = {"Pure Red","Winter Sky","Snow White"}, -- Aura color to craft
     },
-    ["FRUITPURCHASE"] = false,
-    ["PRIORITYFRUIT"] = {
+
+    ["FRUITPURCHASE"] = true, -- Automatically purchase fruits based on priority list
+    ["PRIORITYFRUIT"] = { -- List of preferred fruits to purchase or eat in order of priority
         [1] = "Dragon-Dragon",
-        [2] = "Flame-Flame",
-        [3] = "Rumble-Rumble",
-        [4] = "Human-Human: Buddha",
-        [5] = "Dark-Dark",
+        [2] = "Dough-Dough",
+        [3] = "Human-Human: Buddha",
     },
-    ["FPSCAP"] = 120,
-    ["LOWTEXTURE"] = true
+
+    ["FPSCAP"] = 60, -- Limit the frame rate to optimize performance
+    ["LOWTEXTURE"] = true -- Reduce graphic quality for better performance
 }
 loadstring(game:HttpGet("https://raw.githubusercontent.com/simple-hubs/contents/refs/heads/main/bloxfruit-kaitan-main.lua"))()
 ```
