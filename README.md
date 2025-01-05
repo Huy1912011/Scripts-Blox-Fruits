@@ -50,22 +50,21 @@ Kaitun BF (Xero)
 -
 ```
 -- Max level, godhuman, cdk, sgt
-script_key = ""
 getgenv().Shutdown = false -- Turn on if u are farming bulk accounts
 getgenv().Configs = {
-    ["Team"] = "Marines",
+    ["Team"] = "Pirates",
     ["Gun Farm"] = false, -- Disabled
     ["FPS Boost"] = {
-        ["Enable"] = false,
-        ["FPS Cap"] = 30,
+        ["Enable"] = true,
+        ["FPS Cap"] = 60,
     },
     ["Farm Boss Drops"] = {
-        ["Enable"] = false,
+        ["Enable"] = true,
         ["When x2 Exp Expired"] = false
     },
     ["Hop Player Near"] = true,
     ["Skull Guitar"] = true,
-    ["Find Fruit"] = false, -- Will find 1m+ fruit to unlock swan door to access third sea
+    ["Find Fruit"] = true, -- Will find 1m+ fruit to unlock swan door to access third sea
     ["Cursed Dual Katana"] = true,
     ["Switch Melee"] = true,
     ["Eat Fruit"] = "", -- leave blank for none, put the fruit name like this example: Smoke Fruit, T-Rex Fruit, ...
