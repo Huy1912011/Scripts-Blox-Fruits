@@ -14,6 +14,7 @@ Roblox VNG
 
 Banana Hub (Free)
 -
+Need Key🔑
 ```
 repeat wait() until game:IsLoaded() and game.Players.LocalPlayer 
 getgenv().Key = "" 
@@ -25,6 +26,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitin
 HoHo Hub
 -
 🛡️Anti Ban/Reset✅
+Need Key🔑
 ```
 _G.HohoVersion = "v4"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
@@ -33,12 +35,14 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/L
 Ganteng Hub
 -
 🛡️Anti Ban/Reset✅
+No Key🔑
 ```
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/516a5669fc39b4945cd0609a08264505.lua"))()
 ```
 
 W-azure (Free)
 -
+No Key🔑
 ```
 getgenv().Team = "Marines"
 getgenv().FixCrash = true
@@ -48,6 +52,7 @@ loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc61
 
 Kaitun BF (Xero)
 -
+Need Key🔑
 ```
 -- Max level, godhuman, cdk, sgt
 getgenv().Shutdown = false -- Turn on if u are farming bulk accounts
@@ -77,6 +82,7 @@ repeat task.wait() pcall(function() loadstring(game:HttpGet("https://reviewphim.
 
 Kaitun BF (Simple)
 -
+No Key🔑
 ```
 getgenv().simple_settings = {
     ["MODE"] = "Melee", -- Using "Melee" or "Gun" method
@@ -92,7 +98,7 @@ getgenv().simple_settings = {
             ["RACE-LOCK"] = true, -- Automatically change the character race if not in the list
             ["RACE-V3"] = true, -- Automatically upgrade character race to V3 if possible Human, Mink, Fishman, (Ghoul, Cyborg) soon
         },
-        ["FRAGMENT"] = 100000, -- Limit number of fragments to collect
+        ["FRAGMENT"] = 10000, -- Limit number of fragments to collect
 
         -- SWORD
         ["CANVANDER"] = true,
@@ -124,6 +130,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/simple-hubs/contents/
 
 AnDepZaiHub
 -
+No Key🔑
 ```
 repeat wait() until game:IsLoaded() and game.Players.LocalPlayer 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AnDepZaiHub/AnDepZaiHubBeta/refs/heads/main/AnDepZaiHubNewUpdated.lua"))()
@@ -131,6 +138,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/AnDepZaiHub/AnDepZaiH
 
 Turbo Fly
 -
+No Key🔑
 ```
 loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/refs/heads/main/Fly.lua"))()
 ```
