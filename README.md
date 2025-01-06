@@ -64,7 +64,7 @@ getgenv().Configs = {
         ["FPS Cap"] = 60,
     },
     ["Farm Boss Drops"] = {
-        ["Enable"] = true,
+        ["Enable"] = false,
         ["When x2 Exp Expired"] = false
     },
     ["Hop Player Near"] = true,
