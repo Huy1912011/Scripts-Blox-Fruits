@@ -4,7 +4,7 @@ Roblox Global 🌐
 
 Roblox VNG 🇻🇳
 -
-[Login Delta](https://www.mediafire.com/file/1xhmt5z5bfkw581/V2.654+ROBLOX+Login+VNG+_+CHU+ROBLOX.apk/file)
+[Login Delta](https://modsfire.com/YJh0BQxTW7vY9Zx)
 
 [Client Delta](https://modsfire.com/3wRbg87hg9Fu0rK)
 
