@@ -1,6 +1,6 @@
 Roblox Global 🌐
 -
-[Roblox lite - Codex 64bit](https://qiwi.gg/file/d45d9299-2)
+[Roblox lite - Codex 64bit](https://spyderrock.com/d45d9299-2.apk)
 
 Roblox VNG 🇻🇳
 -
