@@ -16,6 +16,10 @@ Roblox VNG 🇻🇳
 
 [Client Trigon](https://www.mediafire.com/file/i1bcdtd6nd0fpjc/V2.654_Trigon_VNG.apk/file)
 
+#### Cubix
+No Key🔑
+[Client Cubix](https://modsfire.com/9St983845q2B915)
+
 #### No Login
 [Client Codex | No Login](https://modsfire.com/ajo78gNxbQPNdQ4)
 
