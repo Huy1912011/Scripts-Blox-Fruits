@@ -4,7 +4,7 @@ Roblox Global 🌐
 
 [Client Trigon](https://modsfire.com/download/h28psw8343mt6Aq/504ff)
 
-No Key🔑 [Client Cubix](https://modsfire.com/9St983845q2B915)
+[Client Cubix](https://modsfire.com/9St983845q2B915)
 
 Roblox VNG 🇻🇳
 -
@@ -19,7 +19,6 @@ Roblox VNG 🇻🇳
 [Client Trigon](https://www.mediafire.com/file/i1bcdtd6nd0fpjc/V2.654_Trigon_VNG.apk/file)
 
 #### Cubix
-No Key🔑
 
 [Login Cubix](https://modsfire.com/7g8gmK249ELequB)
 
