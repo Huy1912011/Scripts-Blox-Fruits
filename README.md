@@ -27,7 +27,7 @@ Roblox VNG 🇻🇳
 #### No Login
 [Client Codex | No Login](https://modsfire.com/ajo78gNxbQPNdQ4)
 
-[Client Arceus | No Login](https://www.mediafire.com/file/8kbcgpmmpzm86am/Roblox_-_VNG_Arceus_X_NEO_Fix_Tr%25E1%25BA%25A9u_ROBLOX.apk/file)
+[Client Arceus Lite | No Login](https://www.mediafire.com/file/tbm7a4eo0qzwwfg/Roblox.-.VNG.Arceus.X.NEO.1.4.9.apk.bak/file?dkey=9wug33tovii&r=1286)
 
 Banana Hub (Free)
 -
