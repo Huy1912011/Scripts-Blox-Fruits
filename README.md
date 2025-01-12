@@ -6,7 +6,7 @@ Roblox Global 🌐
 
 [Client Cubix](https://modsfire.com/9St983845q2B915)
 
-[Client FrostWare | No Key🔑](https://www.mediafire.com/file/m96uu96ba6d328c/FrostWare_V2.654_Quốc_Tế_YT_TBoyRoblox.apk/file)
+[Client FrostWare](https://www.mediafire.com/file/m96uu96ba6d328c/FrostWare_V2.654_Quốc_Tế_YT_TBoyRoblox.apk/file)
 
 Roblox VNG 🇻🇳
 -
@@ -27,7 +27,6 @@ Roblox VNG 🇻🇳
 [Client Cubix](https://modsfire.com/9St983845q2B915)
 
 #### FrostWare
-No Key🔑
 
 [Login FrostWare](https://www.mediafire.com/file/s7ox3n6dgysnl9r/V2.654_Login_VNG.apk/file)
 
