@@ -26,6 +26,13 @@ Roblox VNG 🇻🇳
 
 [Client Cubix](https://modsfire.com/9St983845q2B915)
 
+#### FrostWare
+No Key🔑
+
+[Login FrostWare](https://www.mediafire.com/file/s7ox3n6dgysnl9r/V2.654_Login_VNG.apk/file)
+
+[Client FrostWare](https://www.mediafire.com/file/axhedr6ekok9w35/V2.654_VNG_FrostWare.apk/file)
+
 #### No Login
 [Client Codex | No Login](https://modsfire.com/ajo78gNxbQPNdQ4)
 
