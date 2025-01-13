@@ -84,6 +84,16 @@ No Key🔑
 loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))()
 ```
 
+Xero Hub
+-
+No Key🔑
+```
+getgenv().Team = "Marines"
+getgenv().Hide_Menu = false
+getgenv().Auto_Execute = false
+loadstring(game:HttpGet("https://raw.githubusercontent.com/verudous/Xero-Hub/refs/heads/main/main.lua"))()
+```
+
 Kaitun BF (Xero)
 -
 Need Key🔑
