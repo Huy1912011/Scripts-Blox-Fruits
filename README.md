@@ -64,7 +64,7 @@ Ganteng Hub
 🛡️Anti Ban/Reset✅
 No Key🔑
 ```
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/516a5669fc39b4945cd0609a08264505.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/a5c3af437cd698d64379cf75cacb9281.lua"))()
 ```
 
 W-azure (Free)
