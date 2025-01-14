@@ -129,10 +129,13 @@ Kaitun BF (Simple)
 No Key🔑
 ```
 getgenv().simple_settings = {
-    ["MODE"] = "Melee", -- Using "Melee" or "Gun" method
     ["MASTERY"] = { -- Settings related to leveling up weapon or skill mastery
         ["ACTIVE"] = true, -- Enable or disable mastery leveling (true = enabled, false = disabled)
         ["METHOD"] = "Half", -- Method for gaining mastery, "Half"[350] or "Full"[600]
+    },
+
+    ["RAID"] = {
+        ["MODE"] = "Legit", -- Legit / KillAura (Legit mode is Mob aura in raid)
     },
 
     ["OBJECTIVE"] = { -- Goals for farming and unlocking features
@@ -140,7 +143,7 @@ getgenv().simple_settings = {
         ["RACE-CONFIGURE"] = {
             ["RACE"] = {"Human", "Skypiea", "Fishman", "Mink"}, -- List -- "Human", "Skypiea", "Fishman", "Mink"
             ["RACE-LOCK"] = true, -- Automatically change the character race if not in the list
-            ["RACE-V3"] = true, -- Automatically upgrade character race to V3 if possible Human, Mink, Fishman, (Ghoul, Cyborg) soon
+            ["RACE-V3"] = true, -- Automatically upgrade character race to V3 if possible Human, Mink, (Fishman, Ghoul, Cyborg) soon
         },
         ["FRAGMENT"] = 10000, -- Limit number of fragments to collect
 
@@ -148,7 +151,7 @@ getgenv().simple_settings = {
         ["CANVANDER"] = true,
         ["BUDDY-SWORD"] = true,
         ["CURSED-DUAL-KATANA"] = true,
-        ["SHARK-ANCHOR"] = true, -- soon..
+        ["SHARK-ANCHOR"] = true,
 
         --GUN
         ["ACIDUM-RIFLE"] = true,
