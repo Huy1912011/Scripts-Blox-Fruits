@@ -1,0 +1,42 @@
+if not game:IsLoaded() then
+	game.Loaded:Wait()
+end
+
+local Players = game:GetService("Players")
+local Player = Players.LocalPlayer
+local TweenService = game:GetService("TweenService")
+local TeleportService = game:GetService("TeleportService")
+local HttpService = game:GetService("HttpService")
+local StarterGui = game:GetService("StarterGui")
+local RunService = game:GetService("RunService")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Remotes = ReplicatedStorage:WaitForChild("Remotes")
+local CommF_ = Remotes:WaitForChild("CommF_")
+
+local function Notify(Text)
+	StarterGui:SetCore("SendNotification", {
+		Title = Config.Name,
+		Text = Text,
+	})
+end
+
+local function SetTeam(Team)
+	Notify(`Setting Team: {Team}`)
+	CommF_:InvokeServer("SetTeam", Team)
+end
+
+local function GetCharacter(Player)
+	return Player.Character or Player.CharacterAdded:Wait()
+end
+
+local function GetHumanoid(Player)
+	local Character = GetCharacter(Player)
+	return Character:WaitForChild("Humanoid")
+end
+
+local function GetRootPart(Player)
+	local Character = GetCharacter(Player)
+	return Character:WaitForChild("HumanoidRootPart")
+end
+
+SetTeam(Config.Team)
