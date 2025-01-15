@@ -2,11 +2,9 @@ Roblox Global 🌐
 -
 [Client Codex Lite 64bit](https://spyderrock.com/d45d9299-2.apk)
 
-[Client Delta Lite 64bit](https://spyderrock.com/66te0262-2.apk)
+[Client Delta](https://www.mediafire.com/file/takumcl0wz2b1wq/Delta+X+QT+%E2%80%94+CHUROBLOX.apk/file)
 
 [Client Trigon](https://modsfire.com/download/h28psw8343mt6Aq/504ff)
-
-[Client Cubix](https://modsfire.com/9St983845q2B915)
 
 [Client FrostWare](https://www.mediafire.com/file/m96uu96ba6d328c/FrostWare_V2.654_Quốc_Tế_YT_TBoyRoblox.apk/file)
 
