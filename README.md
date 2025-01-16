@@ -13,7 +13,7 @@ Roblox VNG 🇻🇳
 #### Delta
 [Login Delta](https://modsfire.com/YJh0BQxTW7vY9Zx)
 
-[Client Delta](https://www.mediafire.com/file/dmv1w25q2m8luj3/Delta-654.479-03.apk/file)
+[Client Delta](https://modsfire.com/g4D0nCbeMvFpDC5)
 
 #### Trigon
 [Login Trigon](https://www.mediafire.com/file/s7ox3n6dgysnl9r/V2.654_Login_VNG.apk/file)
