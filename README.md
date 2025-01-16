@@ -11,7 +11,7 @@ Roblox Global 🌐
 Roblox VNG 🇻🇳
 -
 #### Delta
-[Login Delta](https://modsfire.com/YJh0BQxTW7vY9Zx)
+[Login Delta](https://modsfire.com/BDqs13Sl0EcZEeb)
 
 [Client Delta](https://modsfire.com/g4D0nCbeMvFpDC5)
 
