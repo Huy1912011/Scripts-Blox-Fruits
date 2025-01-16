@@ -2,7 +2,7 @@ Roblox Global 🌐
 -
 [Client Codex Lite 64bit](https://spyderrock.com/d45d9299-2.apk)
 
-[Client Delta](https://www.mediafire.com/file/takumcl0wz2b1wq/Delta+X+QT+%E2%80%94+CHUROBLOX.apk/file)
+[Client Delta](https://www.mediafire.com/file/dmv1w25q2m8luj3/Delta-654.479-03.apk/file)
 
 [Client Trigon](https://modsfire.com/download/h28psw8343mt6Aq/504ff)
 
@@ -13,7 +13,7 @@ Roblox VNG 🇻🇳
 #### Delta
 [Login Delta](https://modsfire.com/YJh0BQxTW7vY9Zx)
 
-[Client Delta](https://modsfire.com/3wRbg87hg9Fu0rK)
+[Client Delta](https://www.mediafire.com/file/dmv1w25q2m8luj3/Delta-654.479-03.apk/file)
 
 #### Trigon
 [Login Trigon](https://www.mediafire.com/file/s7ox3n6dgysnl9r/V2.654_Login_VNG.apk/file)
