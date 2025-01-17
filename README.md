@@ -14,11 +14,6 @@ Roblox Global 🌐
 
 Roblox VNG 🇻🇳
 -
-#### Delta
-[Login Delta](https://www.mediafire.com/file/5c7okdft54d7zdg/V2.655_Login_VNG.apk/file)
-
-[Client Delta](https://www.mediafire.com/file/hkdc4qbcgugwubx/V2.655_Delta_VNG_%28_FIX_%29.apk/file)
-
 #### Fluxus
 [Login Fluxus](https://modsfire.com/tyEGTC44G99ELdE/)
 
