@@ -1,6 +1,6 @@
 Roblox Global 🌐
 -
-[Client Codex Lite 64bit](https://spyderrock.com/d45d9299-2.apk)
+[Client Codex](https://www.mediafire.com/file/p3cqfk9wgro1pt3/Codex+2.654.474.apk/file)
 
 [Client Delta](https://www.mediafire.com/file/dmv1w25q2m8luj3/Delta-654.479-03.apk/file)
 
