@@ -2,6 +2,8 @@ Roblox Global 🌐
 -
 [Client Codex](https://www.mediafire.com/file/p3cqfk9wgro1pt3/Codex+2.654.474.apk/file)
 
+[Client Codex Clone](https://gofile.io/d/Nd2NN5)
+
 [Client Delta](https://www.mediafire.com/file/dmv1w25q2m8luj3/Delta-654.479-03.apk/file)
 
 [Client Fluxus](https://modsfire.com/08lLSSnRNbQwiW0/)
