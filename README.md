@@ -57,7 +57,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitin
 
 HoHo Hub
 -
-🛡️Anti Ban/Reset✅
 Need Key🔑
 ```
 _G.HohoVersion = "v4"
@@ -66,7 +65,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/L
 
 Ganteng Hub
 -
-🛡️Anti Ban/Reset✅
 No Key🔑
 ```
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/a5c3af437cd698d64379cf75cacb9281.lua"))()
