@@ -4,9 +4,9 @@ Roblox Global 🌐
 
 [Client Delta](https://www.mediafire.com/file/dmv1w25q2m8luj3/Delta-654.479-03.apk/file)
 
-[Client Fluxus](https://modsfire.com/download/08lLSSnRNbQwiW0/ddcdd)
+[Client Fluxus](https://modsfire.com/08lLSSnRNbQwiW0/)
 
-[Client Trigon](https://modsfire.com/download/h28psw8343mt6Aq/504ff)
+[Client Trigon](https://modsfire.com/h28psw8343mt6Aq/)
 
 [Client FrostWare](https://www.mediafire.com/file/m96uu96ba6d328c/FrostWare_V2.654_Quốc_Tế_YT_TBoyRoblox.apk/file)
 
@@ -18,9 +18,9 @@ Roblox VNG 🇻🇳
 [Client Delta](https://www.mediafire.com/file/hkdc4qbcgugwubx/V2.655_Delta_VNG_%28_FIX_%29.apk/file)
 
 #### Fluxus
-[Login Fluxus](https://modsfire.com/download/tyEGTC44G99ELdE/ec518)
+[Login Fluxus](https://modsfire.com/tyEGTC44G99ELdE/)
 
-[Client Fluxus](https://modsfire.com/download/08lLSSnRNbQwiW0/ddcdd)
+[Client Fluxus](https://modsfire.com/08lLSSnRNbQwiW0)
 
 #### Trigon
 [Login Trigon](https://www.mediafire.com/file/s7ox3n6dgysnl9r/V2.654_Login_VNG.apk/file)
