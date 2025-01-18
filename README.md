@@ -197,3 +197,5 @@ Server Hop (ID)
 ```
 game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId,'')
 ```
+
+[Control screen](https://d.apkpure.com/b/APK/ahapps.controlthescreenorientation?version=latest)
