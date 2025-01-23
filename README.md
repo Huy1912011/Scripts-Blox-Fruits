@@ -12,7 +12,7 @@ Roblox VNG 🇻🇳
 [Client Delta](https://www.mediafire.com/file/hkdc4qbcgugwubx/V2.655_Delta_VNG_%28_FIX_%29.apk/file)
 
 #### No Login
-[Client Codex | No Login](https://modsfire.com/ajo78gNxbQPNdQ4)
+[Client Codex | No Login](https://www.mediafire.com/file/ddimbier09tgp7g/Codex+2.655+VNG.apk/file)
 
 [Client Fluxus](https://www.mediafire.com/file/8kyus4r48d2pmgv/Fluxus_VNG_V2.655.1095.apk/file)
 
