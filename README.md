@@ -2,40 +2,10 @@ Roblox Global 🌐
 -
 [Client Codex](https://www.mediafire.com/file/p3cqfk9wgro1pt3/Codex+2.654.474.apk/file)
 
-[Client Codex Clone](https://gofile.io/d/Nd2NN5)
-
 [Client Delta](https://www.mediafire.com/file/dmv1w25q2m8luj3/Delta-654.479-03.apk/file)
-
-[Client Fluxus](https://modsfire.com/08lLSSnRNbQwiW0/)
-
-[Client Trigon](https://modsfire.com/h28psw8343mt6Aq/)
-
-[Client FrostWare](https://www.mediafire.com/file/m96uu96ba6d328c/FrostWare_V2.654_Quốc_Tế_YT_TBoyRoblox.apk/file)
 
 Roblox VNG 🇻🇳
 -
-#### Fluxus
-[Login Fluxus](https://modsfire.com/tyEGTC44G99ELdE/)
-
-[Client Fluxus](https://modsfire.com/08lLSSnRNbQwiW0)
-
-#### Trigon
-[Login Trigon](https://www.mediafire.com/file/s7ox3n6dgysnl9r/V2.654_Login_VNG.apk/file)
-
-[Client Trigon](https://www.mediafire.com/file/i1bcdtd6nd0fpjc/V2.654_Trigon_VNG.apk/file)
-
-#### Cubix
-
-[Login Cubix](https://modsfire.com/7g8gmK249ELequB)
-
-[Client Cubix](https://modsfire.com/9St983845q2B915)
-
-#### FrostWare
-
-[Login FrostWare](https://www.mediafire.com/file/s7ox3n6dgysnl9r/V2.654_Login_VNG.apk/file)
-
-[Client FrostWare](https://www.mediafire.com/file/axhedr6ekok9w35/V2.654_VNG_FrostWare.apk/file)
-
 #### No Login
 [Client Codex | No Login](https://modsfire.com/ajo78gNxbQPNdQ4)
 
