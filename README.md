@@ -4,6 +4,10 @@ Roblox Global 🌐
 
 [Client Delta](https://www.mediafire.com/file/dmv1w25q2m8luj3/Delta-654.479-03.apk/file)
 
+[Client Fluxus](https://files.fluxus-team.net/Fluxus.V2.656.apk)
+
+[Client Arceus](https://arceusx.com/arceusx)
+
 Roblox VNG 🇻🇳
 -
 #### Delta
@@ -14,11 +18,11 @@ Roblox VNG 🇻🇳
 #### No Login
 [Client Codex | No Login](https://www.mediafire.com/file/ddimbier09tgp7g/Codex+2.655+VNG.apk/file)
 
-[Client Fluxus](https://www.mediafire.com/file/8kyus4r48d2pmgv/Fluxus_VNG_V2.655.1095.apk/file)
+[Client Fluxus | No Login](https://www.mediafire.com/file/8kyus4r48d2pmgv/Fluxus_VNG_V2.655.1095.apk/file)
 
 [Client Codex Clone](https://gofile.io/d/N3nP0x)
 
-[Client Arceus Lite | No Login](https://www.mediafire.com/file/tbm7a4eo0qzwwfg/Roblox.-.VNG.Arceus.X.NEO.1.4.9.apk.bak/file?dkey=9wug33tovii&r=1286)
+[Client Arceus | No Login](https://arceusx.com/arceusxvng)
 
 Banana Hub (Free)
 -
