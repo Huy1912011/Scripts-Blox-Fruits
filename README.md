@@ -172,6 +172,10 @@ getgenv().simple_settings = {
 loadstring(game:HttpGet("https://raw.githubusercontent.com/simple-hubs/contents/refs/heads/main/bloxfruit-kaitan-main.lua"))()
 ```
 
+#### Cokka Hub
+```
+loadstring(game:HttpGet"https://raw.githubusercontent.com/UserDevEthical/Loadstring/main/CokkaHub.lua")()
+```
 AnDepZaiHub
 -
 No Key🔑
