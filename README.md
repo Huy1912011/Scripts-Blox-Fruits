@@ -19,6 +19,11 @@ loadstring(game:HttpGet("https://rawscripts.net/raw/Grow-a-Garden-NoLag-Hub-no-k
 SPEED HUB : [Config Auto Buy](https://www.mediafire.com/file/tstbk4b37lfoc2u/SpeedHubX.zip/file)
 ```
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+
+```
+Key infinite (Speed Hub):
+```
+BRiKqnqHmXcWBYjXFVtxYBMkydfKjnbK
 ```
 
 OMG HUB : 
