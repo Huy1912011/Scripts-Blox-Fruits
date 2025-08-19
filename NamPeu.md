@@ -21,6 +21,11 @@ Forsaken:
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Saiky988/Saryn-Hub/refs/heads/main/Saryn%25Hub%25Beta.lua'))()
 ```
 
+Forsaken v2:
+```
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Syndromehsh/NOL/refs/heads/main/Nolsaken"))()
+```
+
 Mm2:
 ```
 loadstring(game:HttpGet('https://raw.githubusercontent.com/xenamm2/mm2/refs/heads/main/main'))()
@@ -44,4 +49,9 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/
 Blue Block:
 ```
 loadstring(game:HttpGet("https://scripts.alchemyhub.xyz"))()
+```
+
+Blue lock v2:
+```
+loadstring(game:HttpGet("https://raw.githubusercontent.com/XZuuyaX/XZuyaX-s-Hub/refs/heads/main/Main.Lua", true))()
 ```
