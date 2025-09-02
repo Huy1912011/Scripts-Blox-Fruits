@@ -11,6 +11,11 @@ NAT HUB :
 loadstring(game:HttpGet("https://get.nathub.xyz/loader"))()
 ```
 
+Vxese Hub:
+```
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dex-Bear/Vxezehub/refs/heads/main/VxezeHubMain"))()
+```
+
 NO LAG : 
 ```
 loadstring(game:HttpGet("https://rawscripts.net/raw/Grow-a-Garden-NoLag-Hub-no-key-38699"))()
